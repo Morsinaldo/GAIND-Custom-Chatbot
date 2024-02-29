@@ -1,0 +1,1530 @@
+  <!doctype html>
+<html class="" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Data-driven storytelling.">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true},ajax:{deny_list:["bam.nr-data.net"]},distributed_tracing:{enabled:true}};(window.NREUM||(NREUM={})).loader_config={agentID:"1588640526",accountID:"3422235",trustKey:"66686",xpid:"VwIFU1RQDRABUVNQAQUOUlcA",licenseKey:"NRJS-034728da04015584270",applicationID:"1522649431"};;/*! For license information please see nr-loader-spa-1.252.0.min.js.LICENSE.txt */
+(()=>{var e,t,r={234:(e,t,r)=>{"use strict";r.d(t,{P_:()=>m,Mt:()=>b,C5:()=>s,DL:()=>w,OP:()=>D,lF:()=>O,Yu:()=>E,Dg:()=>v,CX:()=>c,GE:()=>x,sU:()=>N});var n=r(8632),i=r(9567);const o={beacon:n.ce.beacon,errorBeacon:n.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!a[e])throw new Error("Info for ".concat(e," was never set"));return a[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");a[e]=(0,i.D)(t,o);const r=(0,n.ek)(e);r&&(r.info=a[e])}const u=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=r(7056),l=r(50);const f="[data-nr-mask]",h=()=>{const e={mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{feature_flags:[],proxy:{assets:void 0,beacon:void 0},privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10,autoStart:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},session:{domain:void 0,expiresMs:d.oD,inactiveMs:d.Hb},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},metrics:{enabled:!0,autoStart:!0},page_action:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1,autoStart:!0},session_trace:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},harvest:{tooManyRequestsDelay:60},session_replay:{autoStart:!0,enabled:!1,harvestTimeSeconds:60,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,inline_stylesheet:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){u(t)?e.mask_selector="".concat(t,",").concat(f):""===t||null===t?e.mask_selector=f:(0,l.Z)("An invalid session_replay.mask_selector was provided. '*' will be used.",t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){u(t)?e.block_selector+=",".concat(t):""!==t&&(0,l.Z)("An invalid session_replay.block_selector was provided and will not be used",t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,l.Z)("An invalid session_replay.mask_input_option was provided and will not be used",t)}},spa:{enabled:!0,harvestTimeSeconds:10,autoStart:!0}}},p={},g="All configuration objects require an agent identifier!";function m(e){if(!e)throw new Error(g);if(!p[e])throw new Error("Configuration for ".concat(e," was never set"));return p[e]}function v(e,t){if(!e)throw new Error(g);p[e]=(0,i.D)(t,h());const r=(0,n.ek)(e);r&&(r.init=p[e])}function b(e,t){if(!e)throw new Error(g);var r=m(e);if(r){for(var n=t.split("."),i=0;i<n.length-1;i++)if("object"!=typeof(r=r[n[i]]))return;r=r[n[n.length-1]]}return r}const y={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},A={};function w(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!A[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return A[e]}function x(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");A[e]=(0,i.D)(t,y);const r=(0,n.ek)(e);r&&(r.loader_config=A[e])}const E=(0,n.mF)().o;var _=r(385),T=r(6818);const S={buildEnv:T.Re,customTransaction:void 0,disabled:!1,distMethod:T.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(_._A?.performance?.timeOrigin||_._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+_._A.location,ptid:void 0,releaseIds:{},session:void 0,xhrWrappable:"function"==typeof _._A.XMLHttpRequest?.prototype?.addEventListener,version:T.q4,denyList:void 0},R={};function D(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!R[e])throw new Error("Runtime for ".concat(e," was never set"));return R[e]}function N(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");R[e]=(0,i.D)(t,S);const r=(0,n.ek)(e);r&&(r.runtime=R[e])}function O(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},9567:(e,t,r)=>{"use strict";r.d(t,{D:()=>i});var n=r(50);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.Z)("Setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,n.Z)("Setting a Configurable requires a model to set its initial properties");const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),o=0===Object.keys(r).length?e:r;for(let a in o)if(void 0!==e[a])try{Array.isArray(e[a])&&Array.isArray(t[a])?r[a]=Array.from(new Set([...e[a],...t[a]])):"object"==typeof e[a]&&"object"==typeof t[a]?r[a]=i(e[a],t[a]):r[a]=e[a]}catch(e){(0,n.Z)("An error occurred while setting a property of a Configurable",e)}return r}catch(e){(0,n.Z)("An error occured while setting a Configurable",e)}}},6818:(e,t,r)=>{"use strict";r.d(t,{Re:()=>i,gF:()=>o,lF:()=>a,q4:()=>n});const n="1.252.0",i="PROD",o="CDN",a="2.0.0-alpha.11"},385:(e,t,r)=>{"use strict";r.d(t,{FN:()=>c,IF:()=>l,LW:()=>a,Nk:()=>h,Tt:()=>u,_A:()=>o,cv:()=>p,iS:()=>s,il:()=>n,ux:()=>d,v6:()=>i,w1:()=>f});const n="undefined"!=typeof window&&!!window.document,i="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=n?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),a="complete"===o?.document?.readyState,s=Boolean("hidden"===o?.document?.visibilityState),c=""+o?.location,u=/iPad|iPhone|iPod/.test(o.navigator?.userAgent),d=u&&"undefined"==typeof SharedWorker,l=(()=>{const e=o.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);return Array.isArray(e)&&e.length>=2?+e[1]:0})(),f=Boolean(n&&window.document.documentMode),h=!!o.navigator?.sendBeacon,p=Math.floor(o?.performance?.timeOrigin||o?.performance?.timing?.navigationStart||Date.now())},1117:(e,t,r)=>{"use strict";r.d(t,{w:()=>o});var n=r(50);const i={agentIdentifier:"",ee:void 0};class o{constructor(e){try{if("object"!=typeof e)return(0,n.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,r]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=r)}))}catch(e){(0,n.Z)("An error occured while setting SharedContext",e)}}}},8e3:(e,t,r)=>{"use strict";r.d(t,{L:()=>d,R:()=>c});var n=r(8325),i=r(1284),o=r(4322),a=r(3325);const s={};function c(e,t){const r={staged:!1,priority:a.p[t]||0};u(e),s[e].get(t)||s[e].set(t,r)}function u(e){e&&(s[e]||(s[e]=new Map))}function d(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature",r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if(u(e),!e||!s[e].get(t)||r)return c(t);s[e].get(t).staged=!0;const a=[...s[e]];function c(t){const r=e?n.ee.get(e):n.ee,a=o.X.handlers;if(r.backlog&&a){var s=r.backlog[t],c=a[t];if(c){for(var u=0;s&&u<s.length;++u)l(s[u],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,r){r[0].on(e,r[1])}))}))}delete a[t],r.backlog[t]=null,r.emit("drain-"+t,[])}}a.every((e=>{let[t,r]=e;return r.staged}))&&(a.sort(((e,t)=>e[1].priority-t[1].priority)),a.forEach((t=>{let[r]=t;s[e].delete(r),c(r)})))}function l(e,t){var r=e[1];(0,i.D)(t[r],(function(t,r){var n=e[0];if(r[0]===n){var i=r[1],o=e[3],a=e[2];i.apply(o,a)}}))}},8325:(e,t,r)=>{"use strict";r.d(t,{A:()=>c,ee:()=>u});var n=r(8632),i=r(2210),o=r(234);class a{constructor(e){this.contextId=e}}var s=r(3117);const c="nr@context:".concat(s.a),u=function e(t,r){var n={},s={},d={},f=!1;try{f=16===r.length&&(0,o.OP)(r).isolatedBacklog}catch(e){}var h={on:g,addEventListener:g,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,o){!1!==o&&(o=!0);if(u.aborted&&!i)return;t&&o&&t.emit(e,r,n);for(var a=p(n),c=m(e),d=c.length,l=0;l<d;l++)c[l].apply(a,r);var f=b()[s[e]];f&&f.push([h,e,r,a]);return a},get:v,listeners:m,context:p,buffer:function(e,t){const r=b();if(t=t||"feature",h.aborted)return;Object.entries(e||{}).forEach((e=>{let[n,i]=e;s[i]=t,t in r||(r[t]=[])}))},abort:l,aborted:!1,isBuffering:function(e){return!!b()[s[e]]},debugId:r,backlog:f?{}:t&&"object"==typeof t.backlog?t.backlog:{}};return h;function p(e){return e&&e instanceof a?e:e?(0,i.X)(e,c,(()=>new a(c))):new a(c)}function g(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function v(t){return d[t]=d[t]||e(h,t)}function b(){return h.backlog}}(void 0,"globalEE"),d=(0,n.fP)();function l(){u.aborted=!0,Object.keys(u.backlog).forEach((e=>{delete u.backlog[e]}))}d.ee||(d.ee=u)},5546:(e,t,r)=>{"use strict";r.d(t,{E:()=>n,p:()=>i});var n=r(8325).ee.get("handle");function i(e,t,r,i,o){o?(o.buffer([e],i),o.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},4322:(e,t,r)=>{"use strict";r.d(t,{X:()=>o});var n=r(5546);o.on=a;var i=o.handlers={};function o(e,t,r,o){a(o||n.E,i,e,t,r)}function a(e,t,r,i,o){o||(o="feature"),e||(e=n.E);var a=t[o]=t[o]||{};(a[r]=a[r]||[]).push([e,i])}},3239:(e,t,r)=>{"use strict";r.d(t,{bP:()=>s,iz:()=>c,m$:()=>a});var n=r(385);let i=!1,o=!1;try{const e={get passive(){return i=!0,!1},get signal(){return o=!0,!1}};n._A.addEventListener("test",null,e),n._A.removeEventListener("test",null,e)}catch(e){}function a(e,t){return i||o?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,a(r,n))}function c(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,a(r,n))}},3117:(e,t,r)=>{"use strict";r.d(t,{a:()=>n});const n=(0,r(4402).Rl)()},4402:(e,t,r)=>{"use strict";r.d(t,{Ht:()=>u,M:()=>c,Rl:()=>a,ky:()=>s});var n=r(385);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function o(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n._A?.crypto||n._A?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map((e=>"x"===e?o(t,r++).toString(16):"y"===e?(3&o()|8).toString(16):e)).join("")}function s(e){const t=n._A?.crypto||n._A?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const a=[];for(var s=0;s<e;s++)a.push(o(r,i++).toString(16));return a.join("")}function c(){return s(16)}function u(){return s(32)}},7056:(e,t,r)=>{"use strict";r.d(t,{Bq:()=>n,Hb:()=>o,IK:()=>c,oD:()=>i,uT:()=>s,wO:()=>a});const n="NRBA",i=144e5,o=18e5,a={PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},s={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},c={OFF:0,FULL:1,ERROR:2}},7894:(e,t,r)=>{"use strict";function n(){return Math.round(performance.now())}r.d(t,{z:()=>n})},7243:(e,t,r)=>{"use strict";r.d(t,{e:()=>i});var n=r(385);function i(e){if(0===(e||"").indexOf("data:"))return{protocol:"data"};try{const t=new URL(e,location.href),r={port:t.port,hostname:t.hostname,pathname:t.pathname,search:t.search,protocol:t.protocol.slice(0,t.protocol.indexOf(":")),sameOrigin:t.protocol===n._A?.location?.protocol&&t.host===n._A?.location?.host};return r.port&&""!==r.port||("http:"===t.protocol&&(r.port="80"),"https:"===t.protocol&&(r.port="443")),r.pathname&&""!==r.pathname?r.pathname.startsWith("/")||(r.pathname="/".concat(r.pathname)):r.pathname="/",r}catch(e){return{}}}},50:(e,t,r)=>{"use strict";function n(e,t){"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}r.d(t,{Z:()=>n})},2825:(e,t,r)=>{"use strict";r.d(t,{N:()=>d,T:()=>l});var n=r(8325),i=r(5546),o=r(3325),a=r(385);const s="newrelic";const c={stn:[o.D.sessionTrace],err:[o.D.jserrors,o.D.metrics],ins:[o.D.pageAction],spa:[o.D.spa],sr:[o.D.sessionReplay,o.D.sessionTrace]},u=new Set;function d(e,t){const r=n.ee.get(t);e&&"object"==typeof e&&(u.has(t)||(Object.entries(e).forEach((e=>{let[t,n]=e;c[t]?c[t].forEach((e=>{n?(0,i.p)("feat-"+t,[],void 0,e,r):(0,i.p)("block-"+t,[],void 0,e,r),(0,i.p)("rumresp-"+t,[Boolean(n)],void 0,e,r)})):n&&(0,i.p)("feat-"+t,[],void 0,void 0,r),l[t]=Boolean(n)})),Object.keys(c).forEach((e=>{void 0===l[e]&&(c[e]?.forEach((t=>(0,i.p)("rumresp-"+e,[!1],void 0,t,r))),l[e]=!1)})),u.add(t),function(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};try{a._A.dispatchEvent(new CustomEvent(s,{detail:e}))}catch(e){}}({loaded:!0})))}const l={}},2210:(e,t,r)=>{"use strict";r.d(t,{X:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},1284:(e,t,r)=>{"use strict";r.d(t,{D:()=>n});const n=(e,t)=>Object.entries(e||{}).map((e=>{let[r,n]=e;return t(r,n)}))},4351:(e,t,r)=>{"use strict";r.d(t,{P:()=>o});var n=r(8325);const i=()=>{const e=new WeakSet;return(t,r)=>{if("object"==typeof r&&null!==r){if(e.has(r))return;e.add(r)}return r}};function o(e){try{return JSON.stringify(e,i())}catch(e){try{n.ee.emit("internal-error",[e])}catch(e){}}}},3960:(e,t,r)=>{"use strict";r.d(t,{KB:()=>a,b2:()=>o});var n=r(3239);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,n.bP)("load",e,t)}function a(e){if(i())return e();(0,n.iz)("DOMContentLoaded",e)}},8632:(e,t,r)=>{"use strict";r.d(t,{EZ:()=>d,ce:()=>o,ek:()=>u,fP:()=>a,gG:()=>l,h5:()=>c,mF:()=>s});var n=r(7894),i=r(385);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return i._A.NREUM||(i._A.NREUM={}),void 0===i._A.newrelic&&(i._A.newrelic=i._A.NREUM),i._A.NREUM}function s(){let e=a();return e.o||(e.o={ST:i._A.setTimeout,SI:i._A.setImmediate,CT:i._A.clearTimeout,XHR:i._A.XMLHttpRequest,REQ:i._A.Request,EV:i._A.Event,PR:i._A.Promise,MO:i._A.MutationObserver,FETCH:i._A.fetch}),e}function c(e,t){let r=a();r.initializedAgents??={},t.initializedAt={ms:(0,n.z)(),date:new Date},r.initializedAgents[e]=t}function u(e){let t=a();return t.initializedAgents?.[e]}function d(e,t){a()[e]=t}function l(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},7956:(e,t,r)=>{"use strict";r.d(t,{N:()=>i});var n=r(3239);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],r=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;(0,n.iz)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),r,i)}},1214:(e,t,r)=>{"use strict";r.d(t,{em:()=>b,u5:()=>R,QU:()=>O,_L:()=>P,Gm:()=>M,Lg:()=>L,BV:()=>Z,Kf:()=>Y});var n=r(8325),i=r(3117);const o="nr@original:".concat(i.a);var a=Object.prototype.hasOwnProperty,s=!1;function c(e,t){return e||(e=n.ee),r.inPlace=function(e,t,n,i,o){n||(n="");const a="-"===n.charAt(0);for(let s=0;s<t.length;s++){const c=t[s],u=e[c];d(u)||(e[c]=r(u,a?c+n:n,i,c,o))}},r.flag=o,r;function r(t,r,n,s,c){return d(t)?t:(r||(r=""),nrWrapper[o]=t,function(e,t,r){if(Object.defineProperty&&Object.keys)try{return Object.keys(e).forEach((function(r){Object.defineProperty(t,r,{get:function(){return e[r]},set:function(t){return e[r]=t,t}})})),t}catch(e){u([e],r)}for(var n in e)a.call(e,n)&&(t[n]=e[n])}(t,nrWrapper,e),nrWrapper);function nrWrapper(){var o,a,d,l;try{a=this,o=[...arguments],d="function"==typeof n?n(o,a):n||{}}catch(t){u([t,"",[o,a,s],d],e)}i(r+"start",[o,a,s],d,c);try{return l=t.apply(a,o)}catch(e){throw i(r+"err",[o,a,e],d,c),e}finally{i(r+"end",[o,a,l],d,c)}}}function i(r,n,i,o){if(!s||t){var a=s;s=!0;try{e.emit(r,n,i,t,o)}catch(t){u([t,r,n,i],e)}s=a}}}function u(e,t){t||(t=n.ee);try{t.emit("internal-error",e)}catch(e){}}function d(e){return!(e&&"function"==typeof e&&e.apply&&!e[o])}var l=r(2210),f=r(385);const h={},p=f._A.XMLHttpRequest,g="addEventListener",m="removeEventListener",v="nr@wrapped:".concat(n.A);function b(e){var t=function(e){return(e||n.ee).get("events")}(e);if(h[t.debugId]++)return t;h[t.debugId]=1;var r=c(t,!0);function i(e){r.inPlace(e,[g,m],"-",o)}function o(e,t){return e[1]}return"getPrototypeOf"in Object&&(f.il&&y(document,i),y(f._A,i),y(p.prototype,i)),t.on(g+"-start",(function(e,t){var n=e[1];if(null!==n&&("function"==typeof n||"object"==typeof n)){var i=(0,l.X)(n,v,(function(){var e={object:function(){if("function"!=typeof n.handleEvent)return;return n.handleEvent.apply(n,arguments)},function:n}[typeof n];return e?r(e,"fn-",null,e.name||"anonymous"):n}));this.wrapped=e[1]=i}})),t.on(m+"-start",(function(e){e[1]=this.wrapped||e[1]})),t}function y(e,t){let r=e;for(;"object"==typeof r&&!Object.prototype.hasOwnProperty.call(r,g);)r=Object.getPrototypeOf(r);for(var n=arguments.length,i=new Array(n>2?n-2:0),o=2;o<n;o++)i[o-2]=arguments[o];r&&t(r,...i)}var A="fetch-",w=A+"body-",x=["arrayBuffer","blob","json","text","formData"],E=f._A.Request,_=f._A.Response,T="prototype";const S={};function R(e){const t=function(e){return(e||n.ee).get("fetch")}(e);if(!(E&&_&&f._A.fetch))return t;if(S[t.debugId]++)return t;function r(e,r,i){var o=e[r];"function"==typeof o&&(e[r]=function(){var e,r=[...arguments],a={};t.emit(i+"before-start",[r],a),a[n.A]&&a[n.A].dt&&(e=a[n.A].dt);var s=o.apply(this,r);return t.emit(i+"start",[r,e],s),s.then((function(e){return t.emit(i+"end",[null,e],s),e}),(function(e){throw t.emit(i+"end",[e],s),e}))})}return S[t.debugId]=1,x.forEach((e=>{r(E[T],e,w),r(_[T],e,w)})),r(f._A,"fetch",A),t.on(A+"end",(function(e,r){var n=this;if(r){var i=r.headers.get("content-length");null!==i&&(n.rxSize=i),t.emit(A+"done",[null,r],n)}else t.emit(A+"done",[e],n)})),t}const D={},N=["pushState","replaceState"];function O(e){const t=function(e){return(e||n.ee).get("history")}(e);return!f.il||D[t.debugId]++||(D[t.debugId]=1,c(t).inPlace(window.history,N,"-")),t}var I=r(3239);const j={},C=["appendChild","insertBefore","replaceChild"];function P(e){const t=function(e){return(e||n.ee).get("jsonp")}(e);if(!f.il||j[t.debugId])return t;j[t.debugId]=!0;var r=c(t),i=/[?&](?:callback|cb)=([^&#]+)/,o=/(.*)\.([^.]+)/,a=/^(\w+)(\.|$)(.*)$/;function s(e,t){if(!e)return t;const r=e.match(a),n=r[1];return s(r[3],t[n])}return r.inPlace(Node.prototype,C,"dom-"),t.on("dom-start",(function(e){!function(e){if(!e||"string"!=typeof e.nodeName||"script"!==e.nodeName.toLowerCase())return;if("function"!=typeof e.addEventListener)return;var n=(a=e.src,c=a.match(i),c?c[1]:null);var a,c;if(!n)return;var u=function(e){var t=e.match(o);if(t&&t.length>=3)return{key:t[2],parent:s(t[1],window)};return{key:e,parent:window}}(n);if("function"!=typeof u.parent[u.key])return;var d={};function l(){t.emit("jsonp-end",[],d),e.removeEventListener("load",l,(0,I.m$)(!1)),e.removeEventListener("error",f,(0,I.m$)(!1))}function f(){t.emit("jsonp-error",[],d),t.emit("jsonp-end",[],d),e.removeEventListener("load",l,(0,I.m$)(!1)),e.removeEventListener("error",f,(0,I.m$)(!1))}r.inPlace(u.parent,[u.key],"cb-",d),e.addEventListener("load",l,(0,I.m$)(!1)),e.addEventListener("error",f,(0,I.m$)(!1)),t.emit("new-jsonp",[e.src],d)}(e[0])})),t}const k={};function M(e){const t=function(e){return(e||n.ee).get("mutation")}(e);if(!f.il||k[t.debugId])return t;k[t.debugId]=!0;var r=c(t),i=f._A.MutationObserver;return i&&(window.MutationObserver=function(e){return this instanceof i?new i(r(e,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype),t}const H={};function L(e){const t=function(e){return(e||n.ee).get("promise")}(e);if(H[t.debugId])return t;H[t.debugId]=!0;var r=t.context,i=c(t),a=f._A.Promise;return a&&function(){function e(r){var n=t.context(),o=i(r,"executor-",n,null,!1);const s=Reflect.construct(a,[o],e);return t.context(s).getCtx=function(){return n},s}f._A.Promise=e,Object.defineProperty(e,"name",{value:"Promise"}),e.toString=function(){return a.toString()},Object.setPrototypeOf(e,a),["all","race"].forEach((function(r){const n=a[r];e[r]=function(e){let i=!1;[...e||[]].forEach((e=>{this.resolve(e).then(a("all"===r),a(!1))}));const o=n.apply(this,arguments);return o;function a(e){return function(){t.emit("propagate",[null,!i],o,!1,!1),i=i||!e}}}})),["resolve","reject"].forEach((function(r){const n=a[r];e[r]=function(e){const r=n.apply(this,arguments);return e!==r&&t.emit("propagate",[e,!0],r,!1,!1),r}})),e.prototype=a.prototype;const n=a.prototype.then;a.prototype.then=function(){var e=this,o=r(e);o.promise=e;for(var a=arguments.length,s=new Array(a),c=0;c<a;c++)s[c]=arguments[c];s[0]=i(s[0],"cb-",o,null,!1),s[1]=i(s[1],"cb-",o,null,!1);const u=n.apply(this,s);return o.nextPromise=u,t.emit("propagate",[e,!0],u,!1,!1),u},a.prototype.then[o]=n,t.on("executor-start",(function(e){e[0]=i(e[0],"resolve-",this,null,!1),e[1]=i(e[1],"resolve-",this,null,!1)})),t.on("executor-err",(function(e,t,r){e[1](r)})),t.on("cb-end",(function(e,r,n){t.emit("propagate",[n,!0],this.nextPromise,!1,!1)})),t.on("propagate",(function(e,r,n){this.getCtx&&!r||(this.getCtx=function(){if(e instanceof Promise)var r=t.context(e);return r&&r.getCtx?r.getCtx():this})}))}(),t}const z={},F="setTimeout",B="setInterval",U="clearTimeout",V="-start",q="-",G=[F,"setImmediate",B,U,"clearImmediate"];function Z(e){const t=function(e){return(e||n.ee).get("timer")}(e);if(z[t.debugId]++)return t;z[t.debugId]=1;var r=c(t);return r.inPlace(f._A,G.slice(0,2),F+q),r.inPlace(f._A,G.slice(2,3),B+q),r.inPlace(f._A,G.slice(3),U+q),t.on(B+V,(function(e,t,n){e[0]=r(e[0],"fn-",null,n)})),t.on(F+V,(function(e,t,n){this.method=n,this.timerDuration=isNaN(e[1])?0:+e[1],e[0]=r(e[0],"fn-",this,n)})),t}var W=r(50);const X={},K=["open","send"];function Y(e){var t=e||n.ee;const r=function(e){return(e||n.ee).get("xhr")}(t);if(X[r.debugId]++)return r;X[r.debugId]=1,b(t);var i=c(r),o=f._A.XMLHttpRequest,a=f._A.MutationObserver,s=f._A.Promise,u=f._A.setInterval,d="readystatechange",l=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],h=[],p=f._A.XMLHttpRequest=function(e){const t=new o(e),n=r.context(t);try{r.emit("new-xhr",[t],n),t.addEventListener(d,(a=n,function(){var e=this;e.readyState>3&&!a.resolved&&(a.resolved=!0,r.emit("xhr-resolved",[],e)),i.inPlace(e,l,"fn-",w)}),(0,I.m$)(!1))}catch(e){(0,W.Z)("An error occurred while intercepting XHR",e);try{r.emit("internal-error",[e])}catch(e){}}var a;return t};function g(e,t){i.inPlace(t,["onreadystatechange"],"fn-",w)}if(function(e,t){for(var r in e)t[r]=e[r]}(o,p),p.prototype=o.prototype,i.inPlace(p.prototype,K,"-xhr-",w),r.on("send-xhr-start",(function(e,t){g(e,t),function(e){h.push(e),a&&(m?m.then(A):u?u(A):(v=-v,y.data=v))}(t)})),r.on("open-xhr-start",g),a){var m=s&&s.resolve();if(!u&&!s){var v=1,y=document.createTextNode(v);new a(A).observe(y,{characterData:!0})}}else t.on("fn-end",(function(e){e[0]&&e[0].type===d||A()}));function A(){for(var e=0;e<h.length;e++)g(0,h[e]);h.length&&(h=[])}function w(e,t){return t}return r}},7825:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.ajax},6660:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.jserrors},3081:(e,t,r)=>{"use strict";r.d(t,{gF:()=>o,mY:()=>i,t9:()=>n,vz:()=>s,xS:()=>a});const n=r(3325).D.metrics,i="sm",o="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},4649:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageAction},7633:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewEvent},9251:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewTiming},7144:(e,t,r)=>{"use strict";r.d(t,{J0:()=>l,Mi:()=>d,Vb:()=>o,Ye:()=>s,fm:()=>c,i9:()=>a,t9:()=>i,u0:()=>u});var n=r(7056);const i=r(3325).D.sessionReplay,o=.12,a={DomContentLoaded:0,Load:1,FullSnapshot:2,IncrementalSnapshot:3,Meta:4,Custom:5},s=1e6,c=64e3,u={[n.IK.ERROR]:15e3,[n.IK.FULL]:3e5,[n.IK.OFF]:0},d={RESET:{message:"Session was reset",sm:"Reset"},IMPORT:{message:"Recorder failed to import",sm:"Import"},TOO_MANY:{message:"429: Too Many Requests",sm:"Too-Many"},TOO_BIG:{message:"Payload was too large",sm:"Too-Big"},CROSS_TAB:{message:"Session Entity was set to OFF on another tab",sm:"Cross-Tab"},ENTITLEMENTS:{message:"Session Replay is not allowed and will not be started",sm:"Entitlement"}},l=5e3},3614:(e,t,r)=>{"use strict";r.d(t,{BST_RESOURCE:()=>i,END:()=>s,FEATURE_NAME:()=>n,FN_END:()=>u,FN_START:()=>c,PUSH_STATE:()=>d,RESOURCE:()=>o,START:()=>a});const n=r(3325).D.sessionTrace,i="bstResource",o="resource",a="-start",s="-end",c="fn"+a,u="fn"+s,d="pushState"},7836:(e,t,r)=>{"use strict";r.d(t,{BODY:()=>x,CB_END:()=>E,CB_START:()=>u,END:()=>w,FEATURE_NAME:()=>i,FETCH:()=>T,FETCH_BODY:()=>v,FETCH_DONE:()=>m,FETCH_START:()=>g,FN_END:()=>c,FN_START:()=>s,INTERACTION:()=>f,INTERACTION_API:()=>d,INTERACTION_EVENTS:()=>o,JSONP_END:()=>b,JSONP_NODE:()=>p,JS_TIME:()=>_,MAX_TIMER_BUDGET:()=>a,REMAINING:()=>l,SPA_NODE:()=>h,START:()=>A,originalSetTimeout:()=>y});var n=r(234);const i=r(3325).D.spa,o=["click","submit","keypress","keydown","keyup","change"],a=999,s="fn-start",c="fn-end",u="cb-start",d="api-ixn-",l="remaining",f="interaction",h="spaNode",p="jsonpNode",g="fetch-start",m="fetch-done",v="fetch-body-",b="jsonp-end",y=n.Yu.ST,A="-start",w="-end",x="-body",E="cb"+w,_="jsTime",T="fetch"},5938:(e,t,r)=>{"use strict";r.d(t,{W:()=>i});var n=r(8325);class i{constructor(e,t,r){this.agentIdentifier=e,this.aggregator=t,this.ee=n.ee.get(e),this.featureName=r,this.blocked=!1}}},7530:(e,t,r)=>{"use strict";r.d(t,{j:()=>b});var n=r(3325),i=r(234),o=r(5546),a=r(8325),s=r(7894),c=r(8e3),u=r(3960),d=r(385),l=r(50),f=r(3081),h=r(8632);function p(){const e=(0,h.gG)();["setErrorHandler","finished","addToTrace","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion","start","recordReplay","pauseReplay"].forEach((t=>{e[t]=function(){for(var r=arguments.length,n=new Array(r),i=0;i<r;i++)n[i]=arguments[i];return function(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];let o=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&o.push(e.api[t](...n))})),o.length>1?o:o[0]}(t,...n)}}))}var g=r(2825);const m=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};let v=!1;function b(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},b=arguments.length>2?arguments[2]:void 0,y=arguments.length>3?arguments[3]:void 0,{init:A,info:w,loader_config:x,runtime:E={loaderType:b},exposed:_=!0}=t;const T=(0,h.gG)();w||(A=T.init,w=T.info,x=T.loader_config),(0,i.Dg)(e.agentIdentifier,A||{}),(0,i.GE)(e.agentIdentifier,x||{}),w.jsAttributes??={},d.v6&&(w.jsAttributes.isWorker=!0),(0,i.CX)(e.agentIdentifier,w);const S=(0,i.P_)(e.agentIdentifier),R=[w.beacon,w.errorBeacon];v||(S.proxy.assets&&(m(S.proxy.assets),R.push(S.proxy.assets)),S.proxy.beacon&&R.push(S.proxy.beacon),p(),(0,h.EZ)("activatedFeatures",g.T)),E.denyList=[...S.ajax.deny_list||[],...S.ajax.block_internal?R:[]],(0,i.sU)(e.agentIdentifier,E),void 0===e.api&&(e.api=function(e,t){t||(0,c.R)(e,"api");const h={};var p=a.ee.get(e),g=p.get("tracer"),m="api-",v=m+"ixn-";function b(t,r,n,o){const a=(0,i.C5)(e);return null===r?delete a.jsAttributes[t]:(0,i.CX)(e,{...a,jsAttributes:{...a.jsAttributes,[t]:r}}),w(m,n,!0,o||null===r?"session":void 0)(t,r)}function y(){}["setErrorHandler","finished","addToTrace","addRelease"].forEach((e=>{h[e]=w(m,e,!0,"api")})),h.addPageAction=w(m,"addPageAction",!0,n.D.pageAction),h.setCurrentRouteName=w(m,"routeName",!0,n.D.spa),h.setPageViewName=function(t,r){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.OP)(e).customTransaction=(r||"http://custom.transaction")+t,w(m,"setPageViewName",!0)()},h.setCustomAttribute=function(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number","boolean"].includes(typeof t)||null===t)return b(e,t,"setCustomAttribute",r);(0,l.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string, number or boolean type, but a type of <".concat(typeof t,"> was provided."))}else(0,l.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e,"> was provided."))},h.setUserId=function(e){if("string"==typeof e||null===e)return b("enduser.id",e,"setUserId",!0);(0,l.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e,"> was provided."))},h.setApplicationVersion=function(e){if("string"==typeof e||null===e)return b("application.version",e,"setApplicationVersion",!1);(0,l.Z)("Failed to execute setApplicationVersion. Expected <String | null>, but got <".concat(typeof e,">."))},h.start=e=>{try{const t=e?"defined":"undefined";(0,o.p)(f.xS,["API/start/".concat(t,"/called")],void 0,n.D.metrics,p);const r=Object.values(n.D);if(void 0===e)e=r;else{if((e=Array.isArray(e)&&e.length?e:[e]).some((e=>!r.includes(e))))return(0,l.Z)("Invalid feature name supplied. Acceptable feature names are: ".concat(r));e.includes(n.D.pageViewEvent)||e.push(n.D.pageViewEvent)}e.forEach((e=>{p.emit("".concat(e,"-opt-in"))}))}catch(e){(0,l.Z)("An unexpected issue occurred",e)}},h.recordReplay=function(){(0,o.p)(f.xS,["API/recordReplay/called"],void 0,n.D.metrics,p),(0,o.p)("recordReplay",[],void 0,n.D.sessionReplay,p)},h.pauseReplay=function(){(0,o.p)(f.xS,["API/pauseReplay/called"],void 0,n.D.metrics,p),(0,o.p)("pauseReplay",[],void 0,n.D.sessionReplay,p)},h.interaction=function(){return(new y).get()};var A=y.prototype={createTracer:function(e,t){var r={},i=this,a="function"==typeof t;return(0,o.p)(f.xS,["API/createTracer/called"],void 0,n.D.metrics,p),(0,o.p)(v+"tracer",[(0,s.z)(),e,r],i,n.D.spa,p),function(){if(g.emit((a?"":"no-")+"fn-start",[(0,s.z)(),i,a],r),a)try{return t.apply(this,arguments)}catch(e){throw g.emit("fn-err",[arguments,this,e],r),e}finally{g.emit("fn-end",[(0,s.z)()],r)}}}};function w(e,t,r,i){return function(){return(0,o.p)(f.xS,["API/"+t+"/called"],void 0,n.D.metrics,p),i&&(0,o.p)(e+t,[(0,s.z)(),...arguments],r?null:this,i,p),r?void 0:this}}function x(){r.e(111).then(r.bind(r,7438)).then((t=>{let{setAPI:r}=t;r(e),(0,c.L)(e,"api")})).catch((()=>{(0,l.Z)("Downloading runtime APIs failed..."),(0,c.L)(e,"api",!0)}))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{A[e]=w(v,e,void 0,n.D.spa)})),h.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,o.p)(f.xS,["API/noticeError/called"],void 0,n.D.metrics,p),(0,o.p)("err",[e,(0,s.z)(),!1,t],void 0,n.D.jserrors,p)},d.il?(0,u.b2)((()=>x()),!0):x(),h}(e.agentIdentifier,y)),void 0===e.exposed&&(e.exposed=_),v=!0}},1926:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},3325:(e,t,r)=>{"use strict";r.d(t,{D:()=>n,p:()=>i});const n={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",spa:"spa"},i={[n.pageViewEvent]:1,[n.pageViewTiming]:2,[n.metrics]:3,[n.jserrors]:4,[n.ajax]:5,[n.sessionTrace]:6,[n.pageAction]:7,[n.spa]:8,[n.sessionReplay]:9}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var o=n[e]={exports:{}};return r[e](o,o.exports,i),o.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>({111:"nr-spa",164:"nr-spa-compressor",433:"nr-spa-recorder"}[e]+"-1.252.0.min.js"),i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.252.0.PROD:",i.l=(r,n,o,a)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==o)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+o){s=l;break}}if(!s){c=!0;var f={111:"sha512-EIHTFh/PyMHLspjr+lbpdxFHzJXOF7HH8nedLZZTJSO0SyJ4rECM57ibYM67sib1O2FH0nhyrm4QKgl30mtD8w==",433:"sha512-wCJ0jwoj4FyJOrl6z7VLilNolSSxqqm/5L08FBzY2sXjVPFpnyu6p3obblBOv9lj2u9awQrvcEGqvjyYflheow==",164:"sha512-we5lwLCaVV8XgmWsFLhIuQ0Ja0mW9HH9YHLBzjhalvM84n3Rpvmg1iFz7BOZeYnHrjU5dcWOHrtqxvdjDNy2ag=="};(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=r,0!==s.src.indexOf(window.location.origin+"/")&&(s.crossOrigin="anonymous"),f[a]&&(s.integrity=f[a])}e[r]=[n];var h=(t,n)=>{s.onerror=s.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(n))),t)return t(n)},p=setTimeout(h.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=h.bind(null,s.onerror),s.onload=h.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={801:0,92:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var o=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var o=r&&("load"===r.type?"missing":r.type),a=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,o,[a,s,c]=r,u=0;if(a.some((t=>0!==e[t]))){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);u<a.length;u++)o=a[u],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},r=self["webpackChunk:NRBA-1.252.0.PROD"]=self["webpackChunk:NRBA-1.252.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(1926);var e=i(50);class t{#e(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];if("function"==typeof this.api?.[t])return this.api[t](...n);(0,e.Z)("Call to agent api ".concat(t," failed. The API is not currently initialized."))}addPageAction(e,t){return this.#e("addPageAction",e,t)}setPageViewName(e,t){return this.#e("setPageViewName",e,t)}setCustomAttribute(e,t,r){return this.#e("setCustomAttribute",e,t,r)}noticeError(e,t){return this.#e("noticeError",e,t)}setUserId(e){return this.#e("setUserId",e)}setApplicationVersion(e){return this.#e("setApplicationVersion",e)}setErrorHandler(e){return this.#e("setErrorHandler",e)}finished(e){return this.#e("finished",e)}addRelease(e,t){return this.#e("addRelease",e,t)}start(e){return this.#e("start",e)}recordReplay(){return this.#e("recordReplay")}pauseReplay(){return this.#e("pauseReplay")}addToTrace(e){return this.#e("addToTrace",e)}setCurrentRouteName(e){return this.#e("setCurrentRouteName",e)}interaction(){return this.#e("interaction")}}var r=i(3325),n=i(234);const o=Object.values(r.D);function a(e){const t={};return o.forEach((r=>{t[r]=function(e,t){return!1!==(0,n.Mt)(t,"".concat(e,".enabled"))}(r,e)})),t}var s=i(7530);var c=i(8e3),u=i(5938),d=i(3960),l=i(385);class f extends u.W{constructor(e,t,r){let i=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,r),this.auto=i,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===(0,n.Mt)(this.agentIdentifier,"".concat(this.featureName,".autoStart"))&&(this.auto=!1),this.auto&&(0,c.R)(e,r)}importAggregator(){let t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate)return;if(!this.auto)return void this.ee.on("".concat(this.featureName,"-opt-in"),(()=>{(0,c.R)(this.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator()}));const r=l.il&&!0===(0,n.Mt)(this.agentIdentifier,"privacy.cookies_enabled");let o;this.onAggregateImported=new Promise((e=>{o=e}));const a=async()=>{let n;try{if(r){const{setupAgentSession:e}=await i.e(111).then(i.bind(i,1656));n=e(this.agentIdentifier)}}catch(t){(0,e.Z)("A problem occurred when starting up session manager. This page will not start or extend any session.",t)}try{if(!this.shouldImportAgg(this.featureName,n))return(0,c.L)(this.agentIdentifier,this.featureName),void o(!1);const{lazyFeatureLoader:e}=await i.e(111).then(i.bind(i,8582)),{Aggregate:r}=await e(this.featureName,"aggregate");this.featAggregate=new r(this.agentIdentifier,this.aggregator,t),o(!0)}catch(t){(0,e.Z)("Downloading and initializing ".concat(this.featureName," failed..."),t),this.abortHandler?.(),(0,c.L)(this.agentIdentifier,this.featureName,!0),o(!1)}};l.il?(0,d.b2)((()=>a()),!0):a()}shouldImportAgg(e,t){return e!==r.D.sessionReplay||!!n.Yu.MO&&(!1!==(0,n.Mt)(this.agentIdentifier,"session_trace.enabled")&&(!!t?.isNew||!!t?.state.sessionReplayMode))}}var h=i(7633);class p extends f{static featureName=h.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,h.t,r),this.importAggregator()}}var g=i(1117),m=i(1284);class v extends g.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,r,n,i){var o=this.getBucket(e,t,r,i);return o.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,m.D)(e,(function(e,r){t[e]=b(r,t[e])})),t}(n,o.metrics),o}merge(e,t,r,n,i){var o=this.getBucket(e,t,n,i);if(o.metrics){var a=o.metrics;a.count+=r.count,(0,m.D)(r,(function(e,t){if("count"!==e){var n=a[e],i=r[e];i&&!i.c?a[e]=b(i.t,n):a[e]=function(e,t){if(!t)return e;t.c||(t=y(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,a[e])}}))}else o.metrics=r}storeMetric(e,t,r,n){var i=this.getBucket(e,t,r);return i.stats=b(n,i.stats),i}getBucket(e,t,r,n){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:r||{}},n&&(i.custom=n)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},r="",n=!1,i=0;i<e.length;i++)t[r=e[i]]=A(this.aggregatedData[r]),t[r].length&&(n=!0),delete this.aggregatedData[r];return n?t:null}}function b(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=y(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function y(e){return{t:e,min:e,max:e,sos:e*e,c:1}}function A(e){return"object"!=typeof e?[]:(0,m.D)(e,w)}function w(e,t){return t}var x=i(8632),E=i(4402),_=i(4351);var T=i(5546),S=i(7956),R=i(3239),D=i(7894),N=i(9251);class O extends f{static featureName=N.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,N.t,r),l.il&&((0,S.N)((()=>(0,T.p)("docHidden",[(0,D.z)()],void 0,N.t,this.ee)),!0),(0,R.bP)("pagehide",(()=>(0,T.p)("winPagehide",[(0,D.z)()],void 0,N.t,this.ee))),this.importAggregator())}}var I=i(3081);class j extends f{static featureName=I.t9;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,I.t9,r),this.importAggregator()}}var C=i(6660);class P{constructor(e,t,r,n){this.name="UncaughtError",this.message=e,this.sourceURL=t,this.line=r,this.column=n}}class k extends f{static featureName=C.t;#t=new Set;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,C.t,n);try{this.removeOnAbort=new AbortController}catch(e){}this.ee.on("fn-err",((e,t,n)=>{this.abortHandler&&!this.#t.has(n)&&(this.#t.add(n),(0,T.p)("err",[this.#r(n),(0,D.z)()],void 0,r.D.jserrors,this.ee))})),this.ee.on("internal-error",(e=>{this.abortHandler&&(0,T.p)("ierr",[this.#r(e),(0,D.z)(),!0],void 0,r.D.jserrors,this.ee)})),l._A.addEventListener("unhandledrejection",(e=>{this.abortHandler&&(0,T.p)("err",[this.#n(e),(0,D.z)(),!1,{unhandledPromiseRejection:1}],void 0,r.D.jserrors,this.ee)}),(0,R.m$)(!1,this.removeOnAbort?.signal)),l._A.addEventListener("error",(e=>{this.abortHandler&&(this.#t.has(e.error)?this.#t.delete(e.error):(0,T.p)("err",[this.#i(e),(0,D.z)()],void 0,r.D.jserrors,this.ee))}),(0,R.m$)(!1,this.removeOnAbort?.signal)),this.abortHandler=this.#o,this.importAggregator()}#o(){this.removeOnAbort?.abort(),this.#t.clear(),this.abortHandler=void 0}#r(e){return e instanceof Error?e:void 0!==e?.message?new P(e.message,e.filename||e.sourceURL,e.lineno||e.line,e.colno||e.col):new P("string"==typeof e?e:(0,_.P)(e))}#n(e){let t="Unhandled Promise Rejection: ";if(e?.reason instanceof Error)try{return e.reason.message=t+e.reason.message,e.reason}catch(t){return e.reason}if(void 0===e.reason)return new P(t);const r=this.#r(e.reason);return r.message=t+r.message,r}#i(e){if(e.error instanceof SyntaxError&&!/:\d+$/.test(e.error.stack?.trim())){const t=new P(e.message,e.filename,e.lineno,e.colno);return t.name=SyntaxError.name,t}return e.error instanceof Error?e.error:new P(e.message,e.filename,e.lineno,e.colno)}}var M=i(2210);let H=1;const L="nr@id";function z(e){const t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===l._A?0:(0,M.X)(e,L,(function(){return H++}))}function F(e){if("string"==typeof e&&e.length)return e.length;if("object"==typeof e){if("undefined"!=typeof ArrayBuffer&&e instanceof ArrayBuffer&&e.byteLength)return e.byteLength;if("undefined"!=typeof Blob&&e instanceof Blob&&e.size)return e.size;if(!("undefined"!=typeof FormData&&e instanceof FormData))try{return(0,_.P)(e).length}catch(e){return}}}var B=i(1214),U=i(7243);class V{constructor(e){this.agentIdentifier=e}generateTracePayload(e){if(!this.shouldGenerateTrace(e))return null;var t=(0,n.DL)(this.agentIdentifier);if(!t)return null;var r=(t.accountID||"").toString()||null,i=(t.agentID||"").toString()||null,o=(t.trustKey||"").toString()||null;if(!r||!i)return null;var a=(0,E.M)(),s=(0,E.Ht)(),c=Date.now(),u={spanId:a,traceId:s,timestamp:c};return(e.sameOrigin||this.isAllowedOrigin(e)&&this.useTraceContextHeadersForCors())&&(u.traceContextParentHeader=this.generateTraceContextParentHeader(a,s),u.traceContextStateHeader=this.generateTraceContextStateHeader(a,c,r,i,o)),(e.sameOrigin&&!this.excludeNewrelicHeader()||!e.sameOrigin&&this.isAllowedOrigin(e)&&this.useNewrelicHeaderForCors())&&(u.newrelicHeader=this.generateTraceHeader(a,s,c,r,i,o)),u}generateTraceContextParentHeader(e,t){return"00-"+t+"-"+e+"-01"}generateTraceContextStateHeader(e,t,r,n,i){return i+"@nr=0-1-"+r+"-"+n+"-"+e+"----"+t}generateTraceHeader(e,t,r,n,i,o){if(!("function"==typeof l._A?.btoa))return null;var a={v:[0,1],d:{ty:"Browser",ac:n,ap:i,id:e,tr:t,ti:r}};return o&&n!==o&&(a.d.tk=o),btoa((0,_.P)(a))}shouldGenerateTrace(e){return this.isDtEnabled()&&this.isAllowedOrigin(e)}isAllowedOrigin(e){var t=!1,r={};if((0,n.Mt)(this.agentIdentifier,"distributed_tracing")&&(r=(0,n.P_)(this.agentIdentifier).distributed_tracing),e.sameOrigin)t=!0;else if(r.allowed_origins instanceof Array)for(var i=0;i<r.allowed_origins.length;i++){var o=(0,U.e)(r.allowed_origins[i]);if(e.hostname===o.hostname&&e.protocol===o.protocol&&e.port===o.port){t=!0;break}}return t}isDtEnabled(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.enabled}excludeNewrelicHeader(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.exclude_newrelic_header}useNewrelicHeaderForCors(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!1!==e.cors_use_newrelic_header}useTraceContextHeadersForCors(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.cors_use_tracecontext_headers}}var q=i(7825),G=["load","error","abort","timeout"],Z=G.length,W=n.Yu.REQ,X=n.Yu.XHR;class K extends f{static featureName=q.t;constructor(e,t){let i=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];if(super(e,t,q.t,i),(0,n.OP)(e).xhrWrappable){this.dt=new V(e),this.handler=(e,t,r,n)=>(0,T.p)(e,t,r,n,this.ee);try{const e={xmlhttprequest:"xhr",fetch:"fetch",beacon:"beacon"};l._A?.performance?.getEntriesByType("resource").forEach((t=>{if(t.initiatorType in e&&0!==t.responseStatus){const n={status:t.responseStatus},i={rxSize:t.transferSize,duration:Math.floor(t.duration),cbTime:0};Y(n,t.name),this.handler("xhr",[n,i,t.startTime,t.responseEnd,e[t.initiatorType]],void 0,r.D.ajax)}}))}catch(e){}(0,B.u5)(this.ee),(0,B.Kf)(this.ee),function(e,t,i,o){function a(e){var t=this;t.totalCbs=0,t.called=0,t.cbTime=0,t.end=x,t.ended=!1,t.xhrGuids={},t.lastSize=null,t.loadCaptureCalled=!1,t.params=this.params||{},t.metrics=this.metrics||{},e.addEventListener("load",(function(r){E(t,e)}),(0,R.m$)(!1)),l.IF||e.addEventListener("progress",(function(e){t.lastSize=e.loaded}),(0,R.m$)(!1))}function s(e){this.params={method:e[0]},Y(this,e[1]),this.metrics={}}function c(t,r){var i=(0,n.DL)(e);i.xpid&&this.sameOrigin&&r.setRequestHeader("X-NewRelic-ID",i.xpid);var a=o.generateTracePayload(this.parsedOrigin);if(a){var s=!1;a.newrelicHeader&&(r.setRequestHeader("newrelic",a.newrelicHeader),s=!0),a.traceContextParentHeader&&(r.setRequestHeader("traceparent",a.traceContextParentHeader),a.traceContextStateHeader&&r.setRequestHeader("tracestate",a.traceContextStateHeader),s=!0),s&&(this.dt=a)}}function u(e,r){var n=this.metrics,i=e[0],o=this;if(n&&i){var a=F(i);a&&(n.txSize=a)}this.startTime=(0,D.z)(),this.body=i,this.listener=function(e){try{"abort"!==e.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==e.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof r.onload)&&"function"==typeof o.end)&&o.end(r)}catch(e){try{t.emit("internal-error",[e])}catch(e){}}};for(var s=0;s<Z;s++)r.addEventListener(G[s],this.listener,(0,R.m$)(!1))}function d(e,t,r){this.cbTime+=e,t?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof r.onload||"function"!=typeof this.end||this.end(r)}function f(e,t){var r=""+z(e)+!!t;this.xhrGuids&&!this.xhrGuids[r]&&(this.xhrGuids[r]=!0,this.totalCbs+=1)}function h(e,t){var r=""+z(e)+!!t;this.xhrGuids&&this.xhrGuids[r]&&(delete this.xhrGuids[r],this.totalCbs-=1)}function p(){this.endTime=(0,D.z)()}function g(e,r){r instanceof X&&"load"===e[0]&&t.emit("xhr-load-added",[e[1],e[2]],r)}function m(e,r){r instanceof X&&"load"===e[0]&&t.emit("xhr-load-removed",[e[1],e[2]],r)}function v(e,t,r){t instanceof X&&("onload"===r&&(this.onload=!0),("load"===(e[0]&&e[0].type)||this.onload)&&(this.xhrCbStart=(0,D.z)()))}function b(e,r){this.xhrCbStart&&t.emit("xhr-cb-time",[(0,D.z)()-this.xhrCbStart,this.onload,r],r)}function y(e){var t,r=e[1]||{};if("string"==typeof e[0]?0===(t=e[0]).length&&l.il&&(t=""+l._A.location.href):e[0]&&e[0].url?t=e[0].url:l._A?.URL&&e[0]&&e[0]instanceof URL?t=e[0].href:"function"==typeof e[0].toString&&(t=e[0].toString()),"string"==typeof t&&0!==t.length){t&&(this.parsedOrigin=(0,U.e)(t),this.sameOrigin=this.parsedOrigin.sameOrigin);var n=o.generateTracePayload(this.parsedOrigin);if(n&&(n.newrelicHeader||n.traceContextParentHeader))if(e[0]&&e[0].headers)s(e[0].headers,n)&&(this.dt=n);else{var i={};for(var a in r)i[a]=r[a];i.headers=new Headers(r.headers||{}),s(i.headers,n)&&(this.dt=n),e.length>1?e[1]=i:e.push(i)}}function s(e,t){var r=!1;return t.newrelicHeader&&(e.set("newrelic",t.newrelicHeader),r=!0),t.traceContextParentHeader&&(e.set("traceparent",t.traceContextParentHeader),t.traceContextStateHeader&&e.set("tracestate",t.traceContextStateHeader),r=!0),r}}function A(e,t){this.params={},this.metrics={},this.startTime=(0,D.z)(),this.dt=t,e.length>=1&&(this.target=e[0]),e.length>=2&&(this.opts=e[1]);var r,n=this.opts||{},i=this.target;"string"==typeof i?r=i:"object"==typeof i&&i instanceof W?r=i.url:l._A?.URL&&"object"==typeof i&&i instanceof URL&&(r=i.href),Y(this,r);var o=(""+(i&&i instanceof W&&i.method||n.method||"GET")).toUpperCase();this.params.method=o,this.body=n.body,this.txSize=F(n.body)||0}function w(e,t){var n;this.endTime=(0,D.z)(),this.params||(this.params={}),this.params.status=t?t.status:0,"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);var o={txSize:this.txSize,rxSize:n,duration:(0,D.z)()-this.startTime};i("xhr",[this.params,o,this.startTime,this.endTime,"fetch"],this,r.D.ajax)}function x(e){var t=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var o=0;o<Z;o++)e.removeEventListener(G[o],this.listener,!1);t.aborted||(n.duration=(0,D.z)()-this.startTime,this.loadCaptureCalled||4!==e.readyState?null==t.status&&(t.status=0):E(this,e),n.cbTime=this.cbTime,i("xhr",[t,n,this.startTime,this.endTime,"xhr"],this,r.D.ajax))}}function E(e,n){e.params.status=n.status;var i=function(e,t){var r=e.responseType;return"json"===r&&null!==t?t:"arraybuffer"===r||"blob"===r||"json"===r?F(e.response):"text"===r||""===r||void 0===r?F(e.responseText):void 0}(n,e.lastSize);if(i&&(e.metrics.rxSize=i),e.sameOrigin){var o=n.getResponseHeader("X-NewRelic-App-Data");o&&((0,T.p)(I.mY,["Ajax/CrossApplicationTracing/Header/Seen"],void 0,r.D.metrics,t),e.params.cat=o.split(", ").pop())}e.loadCaptureCalled=!0}t.on("new-xhr",a),t.on("open-xhr-start",s),t.on("open-xhr-end",c),t.on("send-xhr-start",u),t.on("xhr-cb-time",d),t.on("xhr-load-added",f),t.on("xhr-load-removed",h),t.on("xhr-resolved",p),t.on("addEventListener-end",g),t.on("removeEventListener-end",m),t.on("fn-end",b),t.on("fetch-before-start",y),t.on("fetch-start",A),t.on("fn-start",v),t.on("fetch-done",w)}(e,this.ee,this.handler,this.dt),this.importAggregator()}}}function Y(e,t){var r=(0,U.e)(t),n=e.params||e;n.hostname=r.hostname,n.port=r.port,n.protocol=r.protocol,n.host=r.hostname+":"+r.port,n.pathname=r.pathname,e.parsedOrigin=r,e.sameOrigin=r.sameOrigin}var J=i(3614);const{BST_RESOURCE:Q,RESOURCE:ee,START:te,END:re,FEATURE_NAME:ne,FN_END:ie,FN_START:oe,PUSH_STATE:ae}=J;var se=i(7056),ce=i(7144);class ue extends f{static featureName=ce.t9;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,ce.t9,r);try{const e=JSON.parse(localStorage.getItem("NRBA_SESSION"));e.sessionReplayMode!==se.IK.OFF?this.#a(e.sessionReplayMode):this.importAggregator({})}catch(e){this.importAggregator({})}}async#a(e){const{Recorder:t}=await Promise.all([i.e(111),i.e(433)]).then(i.bind(i,4136));this.recorder=new t({mode:e,agentIdentifier:this.agentIdentifier}),this.recorder.startRecording(),this.importAggregator({recorder:this.recorder})}}var de=i(7836);const{FEATURE_NAME:le,START:fe,END:he,BODY:pe,CB_END:ge,JS_TIME:me,FETCH:ve,FN_START:be,CB_START:ye,FN_END:Ae}=de;var we=i(4649);class xe extends f{static featureName=we.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,we.t,r),this.importAggregator()}}new class extends t{constructor(t){let r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:(0,E.ky)(16);super(),l._A?(this.agentIdentifier=r,this.sharedAggregator=new v({agentIdentifier:this.agentIdentifier}),this.features={},(0,x.h5)(r,this),this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(p),(0,s.j)(this,t,t.loaderType||"agent"),this.run()):(0,e.Z)("Failed to initial the agent. Could not determine the runtime environment.")}get config(){return{info:(0,n.C5)(this.agentIdentifier),init:(0,n.P_)(this.agentIdentifier),loader_config:(0,n.DL)(this.agentIdentifier),runtime:(0,n.OP)(this.agentIdentifier)}}run(){try{const t=a(this.agentIdentifier),n=[...this.desiredFeatures];n.sort(((e,t)=>r.p[e.featureName]-r.p[t.featureName])),n.forEach((n=>{if(t[n.featureName]||n.featureName===r.D.pageViewEvent){const i=function(e){switch(e){case r.D.ajax:return[r.D.jserrors];case r.D.sessionTrace:return[r.D.ajax,r.D.pageViewEvent];case r.D.sessionReplay:return[r.D.sessionTrace];case r.D.pageViewTiming:return[r.D.pageViewEvent];default:return[]}}(n.featureName);i.every((e=>t[e]))||(0,e.Z)("".concat(n.featureName," is enabled but one or more dependent features has been disabled (").concat((0,_.P)(i),"). This may cause unintended consequences or missing data...")),this.features[n.featureName]=new n(this.agentIdentifier,this.sharedAggregator)}}))}catch(t){(0,e.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",t);for(const e in this.features)this.features[e].abortHandler?.();const r=(0,x.fP)();return delete r.initializedAgents[this.agentIdentifier]?.api,delete r.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator,r.ee?.abort(),delete r.ee?.get(this.agentIdentifier),!1}}}({features:[K,p,O,class extends f{static featureName=ne;constructor(e,t){if(super(e,t,ne,!(arguments.length>2&&void 0!==arguments[2])||arguments[2]),!l.il)return;const n=this.ee;let i;(0,B.QU)(n),this.eventsEE=(0,B.em)(n),this.eventsEE.on(oe,(function(e,t){this.bstStart=(0,D.z)()})),this.eventsEE.on(ie,(function(e,t){(0,T.p)("bst",[e[0],t,this.bstStart,(0,D.z)()],void 0,r.D.sessionTrace,n)})),n.on(ae+te,(function(e){this.time=(0,D.z)(),this.startPath=location.pathname+location.hash})),n.on(ae+re,(function(e){(0,T.p)("bstHist",[location.pathname+location.hash,this.startPath,this.time],void 0,r.D.sessionTrace,n)}));try{i=new PerformanceObserver((e=>{const t=e.getEntries();(0,T.p)(Q,[t],void 0,r.D.sessionTrace,n)})),i.observe({type:ee,buffered:!0})}catch(e){}this.importAggregator({resourceObserver:i})}},ue,j,xe,k,class extends f{static featureName=le;constructor(e,t){if(super(e,t,le,!(arguments.length>2&&void 0!==arguments[2])||arguments[2]),!l.il)return;if(!(0,n.OP)(e).xhrWrappable)return;try{this.removeOnAbort=new AbortController}catch(e){}let r,i=0;const o=this.ee.get("tracer"),a=(0,B._L)(this.ee),s=(0,B.Lg)(this.ee),c=(0,B.BV)(this.ee),u=(0,B.Kf)(this.ee),d=this.ee.get("events"),f=(0,B.u5)(this.ee),h=(0,B.QU)(this.ee),p=(0,B.Gm)(this.ee);function g(e,t){h.emit("newURL",[""+window.location,t])}function m(){i++,r=window.location.hash,this[be]=(0,D.z)()}function v(){i--,window.location.hash!==r&&g(0,!0);var e=(0,D.z)();this[me]=~~this[me]+e-this[be],this[Ae]=e}function b(e,t){e.on(t,(function(){this[t]=(0,D.z)()}))}this.ee.on(be,m),s.on(ye,m),a.on(ye,m),this.ee.on(Ae,v),s.on(ge,v),a.on(ge,v),this.ee.buffer([be,Ae,"xhr-resolved"],this.featureName),d.buffer([be],this.featureName),c.buffer(["setTimeout"+he,"clearTimeout"+fe,be],this.featureName),u.buffer([be,"new-xhr","send-xhr"+fe],this.featureName),f.buffer([ve+fe,ve+"-done",ve+pe+fe,ve+pe+he],this.featureName),h.buffer(["newURL"],this.featureName),p.buffer([be],this.featureName),s.buffer(["propagate",ye,ge,"executor-err","resolve"+fe],this.featureName),o.buffer([be,"no-"+be],this.featureName),a.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"],this.featureName),b(f,ve+fe),b(f,ve+"-done"),b(a,"new-jsonp"),b(a,"jsonp-end"),b(a,"cb-start"),h.on("pushState-end",g),h.on("replaceState-end",g),window.addEventListener("hashchange",g,(0,R.m$)(!0,this.removeOnAbort?.signal)),window.addEventListener("load",g,(0,R.m$)(!0,this.removeOnAbort?.signal)),window.addEventListener("popstate",(function(){g(0,i>1)}),(0,R.m$)(!0,this.removeOnAbort?.signal)),this.abortHandler=this.#o,this.importAggregator()}#o(){this.removeOnAbort?.abort(),this.abortHandler=void 0}}],loaderType:"spa"})})()})();</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="env" content="production">
+    <meta property="fb:app_id" content="457597585444624">
+    <meta name="msapplication-TileColor" content="#1d0a30">
+    <meta name="msapplication-config" content="https://theanalyst.com/wp-content/themes/the-analyst-theme/icons/browserconfig.xml?v=1.0.1">
+    <meta name="theme-color" content="#1d0a30">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://theanalyst.com/wp-content/themes/the-analyst-theme/icons/apple-touch-icon.png?v=v1.0.1">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://theanalyst.com/wp-content/themes/the-analyst-theme/icons/favicon-32x32.png?v=v1.0.1">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://theanalyst.com/wp-content/themes/the-analyst-theme/icons/favicon-16x16.png?v=v1.0.1">
+    <link rel="manifest" href="https://theanalyst.com/wp-content/themes/the-analyst-theme/icons/site.webmanifest?v=v1.0.1" crossorigin="use-credentials">
+    <link rel="mask-icon" href="https://theanalyst.com/wp-content/themes/the-analyst-theme/icons/safari-pinned-tab.svg?v=v1.0.1" color="#1d0a30">
+    <link rel="shortcut icon" href="https://theanalyst.com/wp-content/themes/the-analyst-theme/icons/favicon.ico?v=v1.0.1">
+    <link rel="author" href="https://theanalyst.com/humans.txt">
+    <link rel="stylesheet" href="https://theanalyst.com/wp-content/themes/the-analyst-theme/theme/style.css" type="text/css" media="screen">
+    <link rel="pingback" href="https://theanalyst.com/wp/xmlrpc.php">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+    
+        <!-- OneTrust Cookies Consent Notice start for theanalyst.com -->
+    <script src="https://optanon.blob.core.windows.net/consent/f0c2dbc7-adf7-4831-b95d-264f7c6efb7d.js" type="text/javascript" charset="UTF-8"></script>
+    <script type="text/javascript">
+      function OptanonWrapper() { }
+    </script>
+    <!-- OneTrust Cookies Consent Notice end for theanalyst.com -->
+    <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                                                          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-TZBBPFZ');</script>
+        <!-- End Google Tag Manager -->
+        <!-- Meta Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2250372671902680');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=2250372671902680&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Meta Pixel Code -->
+    <!-- Twitter conversion tracking base code -->
+    <script>
+        !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+        },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',
+            a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+        twq('config','o9lqi');
+    </script>
+    <!-- End Twitter conversion tracking base code -->
+        <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<title>101 Best Premier League Facts of 2022-23 | The Analyst</title>
+	<meta name="description" content="Thanks to the team at OptaJoe, we look back at the 2022-23 campaign with the 101 best Premier League facts of the season." />
+	<link rel="canonical" href="https://theanalyst.com/2023/05/101-best-premier-league-facts-2022-23/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="101 Best Premier League Facts of 2022-23 | The Analyst" />
+	<meta property="og:description" content="Thanks to the team at OptaJoe, we look back at the 2022-23 campaign with the 101 best Premier League facts of the season." />
+	<meta property="og:url" content="https://theanalyst.com/2023/05/101-best-premier-league-facts-2022-23/" />
+	<meta property="og:site_name" content="The Analyst" />
+	<meta property="article:author" content="https://facebook.com/someoddpilot" />
+	<meta property="article:published_time" content="2023-05-30T19:52:00+00:00" />
+	<meta property="article:modified_time" content="2023-05-30T19:56:52+00:00" />
+	<meta property="og:image" content="https://theanalyst.com/wp-content/uploads/2023/05/101-premier-league-facts.jpg" />
+	<meta property="og:image:width" content="1360" />
+	<meta property="og:image:height" content="949" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="UK Data Insights Team" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:creator" content="@optaanalyst" />
+	<meta name="twitter:site" content="@optaanalyst" />
+	<meta name="twitter:label1" content="Written by" />
+	<meta name="twitter:data1" content="administrator" />
+	<meta name="twitter:label2" content="Est. reading time" />
+	<meta name="twitter:data2" content="19 minutes" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://theanalyst.com/2023/05/101-best-premier-league-facts-2022-23/#article","isPartOf":{"@id":"https://theanalyst.com/2023/05/101-best-premier-league-facts-2022-23/"},"author":{"@id":"https://theanalyst.com/#/schema/person/image/ab5f03b6a9d0b79c4f3ed85a0fd06b10"},"headline":"101 Best Premier League Facts of the 2022-23 Season","datePublished":"2023-05-30T19:52:00+00:00","dateModified":"2023-05-30T19:56:52+00:00","mainEntityOfPage":{"@id":"https://theanalyst.com/2023/05/101-best-premier-league-facts-2022-23/"},"wordCount":3652,"publisher":{"@id":"https://theanalyst.com/#organization"},"image":{"@id":"https://theanalyst.com/2023/05/101-best-premier-league-facts-2022-23/#primaryimage"},"thumbnailUrl":"https://theanalyst.com/wp-content/uploads/2023/05/101-premier-league-facts.jpg","articleSection":["Football","Premier League"],"inLanguage":"eu"},{"@type":"WebPage","@id":"https://theanalyst.com/2023/05/101-best-premier-league-facts-2022-23/","url":"https://theanalyst.com/2023/05/101-best-premier-league-facts-2022-23/","name":"101 Best Premier League Facts of 2022-23 | The Analyst","isPartOf":{"@id":"https://theanalyst.com/#website"},"primaryImageOfPage":{"@id":"https://theanalyst.com/2023/05/101-best-premier-league-facts-2022-23/#primaryimage"},"image":{"@id":"https://theanalyst.com/2023/05/101-best-premier-league-facts-2022-23/#primaryimage"},"thumbnailUrl":"https://theanalyst.com/wp-content/uploads/2023/05/101-premier-league-facts.jpg","datePublished":"2023-05-30T19:52:00+00:00","dateModified":"2023-05-30T19:56:52+00:00","description":"Thanks to the team at OptaJoe, we look back at the 2022-23 campaign with the 101 best Premier League facts of the season.","breadcrumb":{"@id":"https://theanalyst.com/2023/05/101-best-premier-league-facts-2022-23/#breadcrumb"},"inLanguage":"eu","potentialAction":[{"@type":"ReadAction","target":["https://theanalyst.com/2023/05/101-best-premier-league-facts-2022-23/"]}]},{"@type":"ImageObject","inLanguage":"eu","@id":"https://theanalyst.com/2023/05/101-best-premier-league-facts-2022-23/#primaryimage","url":"https://theanalyst.com/wp-content/uploads/2023/05/101-premier-league-facts.jpg","contentUrl":"https://theanalyst.com/wp-content/uploads/2023/05/101-premier-league-facts.jpg","width":1360,"height":949,"caption":"101 Premier League Facts"},{"@type":"BreadcrumbList","@id":"https://theanalyst.com/2023/05/101-best-premier-league-facts-2022-23/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://theanalyst.com/"},{"@type":"ListItem","position":2,"name":"Latest Articles","item":"https://theanalyst.com/latest-articles/"},{"@type":"ListItem","position":3,"name":"101 Best Premier League Facts of the 2022-23 Season"}]},{"@type":"WebSite","@id":"https://theanalyst.com/#website","url":"https://theanalyst.com/","name":"The Analyst","description":"Data-driven storytelling.","publisher":{"@id":"https://theanalyst.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://theanalyst.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"eu"},{"@type":"Organization","@id":"https://theanalyst.com/#organization","name":"The Analyst","url":"https://theanalyst.com/","logo":{"@type":"ImageObject","inLanguage":"eu","@id":"https://theanalyst.com/#/schema/logo/image/","url":"https://theanalyst.com/wp-content/uploads/2021/04/the-analyst-logo-primary-light-bg.png","contentUrl":"https://theanalyst.com/wp-content/uploads/2021/04/the-analyst-logo-primary-light-bg.png","width":5513,"height":997,"caption":"The Analyst"},"image":{"@id":"https://theanalyst.com/#/schema/logo/image/"},"sameAs":["https://twitter.com/optaanalyst"]},{"@type":"Person","@id":"https://theanalyst.com/#/schema/person/image/ab5f03b6a9d0b79c4f3ed85a0fd06b10","name":"UK Data Insights Team","image":{"@type":"ImageObject","inLanguage":"eu","@id":"https://theanalyst.com/#/schema/person/image/23494c9101089ad44ae88ce9d2f56aac","url":"https://secure.gravatar.com/avatar/?s=96&d=mm&r=g","contentUrl":"https://secure.gravatar.com/avatar/?s=96&d=mm&r=g","width":"","height":"","caption":"UK Data Insights Team"},"url":"https://theanalyst.com/author/uk-data-insights-team/"}]}</script>
+
+
+<link rel='dns-prefetch' href='//static.addtoany.com' />
+<link rel='dns-prefetch' href='//platform.twitter.com' />
+<link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="The Analyst &raquo; Feed" href="https://theanalyst.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="The Analyst &raquo; Comments Feed" href="https://theanalyst.com/comments/feed/" />
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/theanalyst.com\/wp\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.4.3"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://theanalyst.com/wp/wp-includes/css/dist/block-library/style.min.css?ver=6.4.3' type='text/css' media='all' />
+<style id='stats-perform-opta-player-ratings-style-inline-css' type='text/css'>
+.wp-block-stats-perform-opta-player-ratings{--opr-font-family:var(--font-primary,"Big Shoulders Text",sans-serif);--opr-primary-color:#1d0a30;--opr-secondary-color:#fd4890;--opr-white:#fff;--opr-transition:0.3s ease-in-out;color:#fff;font-family:var(--opr-font-family);overflow:hidden}
+.Y9McmIvBB3sA53HMbwE4{border-radius:8px;overflow:hidden}
+.RkrYd8LuuRZH9y9ywo8H{background-color:hsla(0,0%,100%,.25);border-radius:50%;height:24px!important;-o-object-fit:cover;object-fit:cover;width:24px}.GWRgFnzHX7i5LCieLiak{padding:2px}.qLBjYIAZ_t7j1POaDBo0{height:56px!important;width:56px}.AdeWxV5dXrn8fIrKpmPR{background-color:var(--opr-white,#fff)}
+.x3fV7B14kDdB652abklA{align-items:center;background:var(--opr-secondary-color,#fd4890);border-radius:4px;color:var(--opr-primary-color,#1d0a30);display:flex;flex:0 0 100%;flex-direction:row;font-size:14px;font-weight:700;gap:8px;justify-content:center;letter-spacing:-.14px;line-height:16px;padding:8px}@media screen and (min-width:768px){.x3fV7B14kDdB652abklA{flex:0 0 112px;flex-direction:column;gap:4px;padding:4px 8px}}.x3fV7B14kDdB652abklA span{color:var(--opr-white,#fff);font-size:24px;font-weight:900;letter-spacing:-.24px;line-height:1}.x3fV7B14kDdB652abklA span span{font-size:24px}
+.ECJREK99JYoZuYXRlStv{flex:1 1 auto}.PqAP4S3Yt6heyTivJQvP{align-items:center;display:flex;gap:8px}.PqAP4S3Yt6heyTivJQvP:first-of-type span{font-size:16px;font-weight:400;letter-spacing:-.16px}.PqAP4S3Yt6heyTivJQvP+.PqAP4S3Yt6heyTivJQvP{margin-top:4px}.btfx_KMMWlfStQfQqSkP{font-size:24px!important;font-weight:900!important;letter-spacing:-.24px;line-height:1!important;margin:0!important}.btfx_KMMWlfStQfQqSkP a{transition:color var(--opr-transition)}.btfx_KMMWlfStQfQqSkP a:hover{color:var(--opr-secondary-color,"#fd4890")}.ATYtz1TDZzFpLPQ2KKmk{color:hsla(0,0%,100%,.75);font-weight:400}.ATYtz1TDZzFpLPQ2KKmk,.lcqsM2Yy6pG8asE5nMRh{font-size:16px;letter-spacing:-.16px}.lcqsM2Yy6pG8asE5nMRh{font-weight:700}
+.kIOP7AZzSMN_98aPlH6w{align-items:center;background:hsla(0,0%,100%,.1);border-radius:4px;display:flex;flex:1 1 calc(33.33333% - 6px);flex-direction:column;font-size:14px;font-weight:400;gap:4px;justify-content:center;letter-spacing:-.14px;line-height:16px;min-width:80px;padding:4px 8px}@media screen and (min-width:768px){.kIOP7AZzSMN_98aPlH6w{flex:1 0 105px}}.kIOP7AZzSMN_98aPlH6w span{color:var(--opr-white,#fff);font-size:16px;font-weight:900;letter-spacing:-.16px;line-height:1}
+.g3ZgYkXExzd_AcoxQNCf{color:var(--opr-secondary-color,#fd4890);flex:0 0 100%;font-size:16px;font-weight:900;letter-spacing:-.18px;line-height:1;text-align:center;text-transform:uppercase}@media screen and (min-width:992px){.g3ZgYkXExzd_AcoxQNCf{flex:0 0 56px;font-size:18px}}
+.rBZfYMC9LEPwaQcWPE7p{background-color:var(--opr-primary-color,#1d0a30);color:var(--opr-white,#fff);padding:8px 16px;transition:opacity var(--opr-transition)}.xKqFx2nneriCkaZHD0MX{align-items:center;display:flex;flex-flow:row wrap;gap:16px}.xKqFx2nneriCkaZHD0MX+.xKqFx2nneriCkaZHD0MX{margin-top:8px}
+.drmCYoXHpHHqbZPD0qO_{background-color:var(--opr-primary-color,#1d0a30);border:1px solid var(--opr-primary-color,#1d0a30);color:var(--opr-white,#fff)!important;flex:1 1 auto;font-size:18px;font-weight:800;letter-spacing:-.36px;line-height:1.3;padding:4px 24px;text-align:center;text-transform:uppercase;transition:all .3s ease-in-out}.drmCYoXHpHHqbZPD0qO_:hover{background-color:var(--opr-white,#fff);border-color:var(--opr-primary-color,#1d0a30);color:var(--opr-primary-color,#1d0a30)!important;cursor:pointer}@media(min-width:992px){.drmCYoXHpHHqbZPD0qO_{padding:8px 24px}}
+.hJvezH7X4fkYzW_QwGOi{align-items:center;background-color:var(--opr-white,#fff);color:var(--opr-primary-color,#1d0a30);-moz-column-gap:32px;column-gap:32px;display:flex;flex-flow:row wrap;justify-content:space-around;padding:8px 16px!important;row-gap:8px}@media(min-width:768px){.hJvezH7X4fkYzW_QwGOi{-moz-column-gap:20px;column-gap:20px}}.hJvezH7X4fkYzW_QwGOi span{flex:0 0 100%;font-size:14px;font-weight:700;letter-spacing:-.16px;line-height:1;text-align:center;text-transform:uppercase}@media(min-width:768px){.hJvezH7X4fkYzW_QwGOi span{flex:1 1 auto;order:1}}@media(min-width:992px){.hJvezH7X4fkYzW_QwGOi span{font-size:16px}}.hJvezH7X4fkYzW_QwGOi span+a{flex:0 1 184px;max-width:184px}@media(min-width:768px){.hJvezH7X4fkYzW_QwGOi span+a{order:0}}.hJvezH7X4fkYzW_QwGOi span+a img{max-width:100%}@media(min-width:768px){.hJvezH7X4fkYzW_QwGOi a+a{order:2}}
+
+</style>
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='the-analyst-theme-style-reset-css' href='https://theanalyst.com/wp-content/themes/the-analyst-theme/dist/css/reset.css' type='text/css' media='all' />
+<link rel='stylesheet' id='the-analyst-google-fonts-css' href='https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@300;400;500;700;800&#038;family=IBM+Plex+Mono&#038;family=Lora&#038;display=swap' type='text/css' media='all' />
+<link rel='stylesheet' id='the-analyst-theme-stylesheet-css' href='https://theanalyst.com/wp-content/themes/the-analyst-theme/dist/css/bundle.css?ver=43ae2425deff0edf9143d4edf3e88091' type='text/css' media='all' />
+<link rel='stylesheet' id='opta-games-leaderboard-style-css' href='https://theanalyst.com/wp-content/plugins/opta-games-leaderboards/build/index.css?ver=6.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='opta-games-psa-style-css' href='https://theanalyst.com/wp-content/plugins/opta-games-widgets/build/player-sorting-ad/index.css?ver=6.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='opta-games-widgets-google-fonts-css' href='https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&#038;display=swap' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-default-css' href='https://theanalyst.com/wp-content/plugins/tablepress/css/build/default.css?ver=2.2.5' type='text/css' media='all' />
+<link rel='stylesheet' id='addtoany-css' href='https://theanalyst.com/wp-content/plugins/add-to-any/addtoany.min.css?ver=1.16' type='text/css' media='all' />
+<script type="text/javascript" id="addtoany-core-js-before">
+/* <![CDATA[ */
+window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overlays=[];a2a_config.templates={};a2a_localize = {
+	Share: "Share",
+	Save: "Save",
+	Subscribe: "Subscribe",
+	Email: "Email",
+	Bookmark: "Bookmark",
+	ShowAll: "Show all",
+	ShowLess: "Show less",
+	FindServices: "Find service(s)",
+	FindAnyServiceToAddTo: "Instantly find any service to add to",
+	PoweredBy: "Powered by",
+	ShareViaEmail: "Share via email",
+	SubscribeViaEmail: "Subscribe via email",
+	BookmarkInYourBrowser: "Bookmark in your browser",
+	BookmarkInstructions: "Press Ctrl+D or \u2318+D to bookmark this page",
+	AddToYourFavorites: "Add to your favorites",
+	SendFromWebOrProgram: "Send from any email address or email program",
+	EmailProgram: "Email program",
+	More: "More&#8230;",
+	ThanksForSharing: "Thanks for sharing!",
+	ThanksForFollowing: "Thanks for following!"
+};
+
+a2a_config.icon_color="transparent,#0a0a0a";
+/* ]]> */
+</script>
+<script type="text/javascript" async src="https://static.addtoany.com/menu/page.js" id="addtoany-core-js"></script>
+<script type="text/javascript" src="https://theanalyst.com/wp/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://theanalyst.com/wp/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" async src="https://theanalyst.com/wp-content/plugins/add-to-any/addtoany.min.js?ver=1.1" id="addtoany-jquery-js"></script>
+<script type="text/javascript" src="https://theanalyst.com/wp-content/plugins/pass-url-parameters-to-embeded-iframe/js/rwc-pass-parameters.js?ver=1.0" id="rwc_pass_parameters_script-js"></script>
+<link rel="https://api.w.org/" href="https://theanalyst.com/wp-json/" /><link rel="alternate" type="application/json" href="https://theanalyst.com/wp-json/wp/v2/posts/75289" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://theanalyst.com/wp/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.4.3" />
+<meta name="generator" content="Seriously Simple Podcasting 3.0.2" />
+<link rel='shortlink' href='https://theanalyst.com/?p=75289' />
+<link rel="alternate" type="application/json+oembed" href="https://theanalyst.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftheanalyst.com%2F2023%2F05%2F101-best-premier-league-facts-2022-23%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://theanalyst.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftheanalyst.com%2F2023%2F05%2F101-best-premier-league-facts-2022-23%2F&#038;format=xml" />
+
+<link rel="alternate" type="application/rss+xml" title="Podcast RSS feed" href="https://theanalyst.com/feed/podcast" />
+
+		<script src="https://www.flashb.id/universal/60b343cb-7c2f-574c-bf20-4b05b9d63ee1.js" data-cfasync="false" defer></script>
+		<script type="text/javascript" data-cfasync="false">
+			window._hbdbrk = window._hbdbrk || [];
+			window._hbdbrk.push(['_vars', {
+				page_type: 'article',
+				custom1: 'administrator',
+				custom2: 'football',
+				custom3: '75289',
+				custom4: '',
+				custom5: '',
+							}]);
+		</script>
+		<script>
+			window.actirisePlugin = window.actirisePlugin || {};
+			window.actirisePlugin.version = '2.3.2';
+			window.actirisePlugin.adsTxtActive = 'false';
+			window.actirisePlugin.adsTxtLastUpdate = '1708345963';
+			window.actirisePlugin.presizedActive = 'false';
+			window.actirisePlugin.presizedSelected = '[]';
+			window.actirisePlugin.presizedLastUpdate = '1709160259';
+			window.actirisePlugin.pluginLastUpdate = '1709160259';
+			window.actirisePlugin.cron = 'true';
+			window.actirisePlugin.noPub = '[]';
+			window.actirisePlugin.fastcmp = 'false';
+			window.actirisePlugin.debug = '1';
+		</script>
+		
+      </head>
+<body class="post-template-default single single-post postid-75289 single-format-standard 101-best-premier-league-facts-2022-23" data-template="base.twig">
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TZBBPFZ"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+
+
+  <aside class="ta-ticker">
+    <h2 class="ta-ticker-heading">Match Ticker</h2>
+    <iframe src="https://dataviz.theanalyst.com/opta-football-predictions/?ticker=true" width="100%" height="120" target="_parent"></iframe>
+  </aside>
+
+  <header class="site-header">
+    <a href="https://theanalyst.com/eu"
+   class="header-home-link"><svg width="228" height="43" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 228 41.33"><defs><linearGradient id="a" x1="-190.63" y1="415.84" x2="-190.73" y2="415.94" gradientTransform="matrix(239.02 0 0 -239.02 45608.9 99438.71)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#6327c6"/><stop offset=".48" stop-color="#b225c3"/><stop offset="1" stop-color="#e62c4a"/></linearGradient></defs><path fill="#fff" d="M136.37 8.79l9.51 24.05h-2.7l-2.7-7.02h-10.63l-2.77 7.02h-2.53l9.51-24.05h2.29zm3.34 15.01l-4.52-11.67-4.55 11.67h9.07zm12.6-6.53c-.74.12-1.46.31-2.16.56l-.51.2v14.81h-2.29V16.68l1.28-.54c1.91-.76 4-1.15 6.27-1.15 4.47 0 6.71 2.2 6.71 6.61v11.23h-2.26V21.66c0-3.06-1.57-4.59-4.72-4.59-.81 0-1.59.06-2.33.19zm20.37 5.67c.74.06 1.62.14 2.63.25v-1.55c0-1.46-.33-2.6-1-3.41-.66-.81-1.85-1.21-3.56-1.21-2.23 0-3.8.82-4.72 2.46l-.27.51-2.06-.84.34-.61c1.28-2.36 3.54-3.54 6.78-3.54 1.26 0 2.32.16 3.17.47.85.32 1.55.76 2.07 1.33.53.57.91 1.28 1.15 2.11.24.83.35 1.75.35 2.77v10.25l-1.21.51c-1.3.58-3.17.88-5.6.88-1.39 0-2.56-.1-3.49-.3-.93-.2-1.68-.52-2.24-.94-.56-.43-.96-.97-1.2-1.64-.24-.66-.35-1.44-.35-2.34 0-.94.13-1.75.4-2.41.27-.66.7-1.2 1.3-1.62.6-.42 1.36-.72 2.29-.91.93-.19 2.07-.29 3.42-.29.45 0 1.05.03 1.79.08zm2.63 7.74v-5.63c-2.02-.2-3.58-.3-4.66-.3-1.78 0-3.03.26-3.76.78s-1.1 1.36-1.1 2.53c0 .56.07 1.06.22 1.48.15.43.4.78.78 1.06.37.28.86.49 1.47.62s1.38.2 2.33.2c1.73 0 3.09-.18 4.08-.54l.64-.2zm4.75-22.8h2.26v24.96h-2.26V7.88zm19.11 26.01c0 4.86-2.39 7.29-7.19 7.29-3.17 0-5.41-1.19-6.71-3.58l-.37-.71 2.02-1.01.3.57c.97 1.78 2.54 2.66 4.72 2.66 3.28 0 4.92-1.71 4.92-5.13v-1.99c-1.01.32-1.95.54-2.82.67-.87.13-1.69.2-2.48.2-4.45 0-6.68-2.19-6.68-6.58V15.5h2.26v10.69c0 3.08 1.57 4.62 4.72 4.62 1.44 0 3.1-.3 4.99-.91V15.5h2.29v18.38zm14-5.64c0-.54-.1-.99-.29-1.35-.19-.36-.48-.65-.88-.88-.39-.22-.9-.4-1.52-.54-.62-.13-1.36-.25-2.21-.34-.85-.09-1.69-.2-2.5-.34-.81-.13-1.53-.38-2.18-.73-.64-.35-1.16-.84-1.55-1.47-.39-.63-.59-1.48-.59-2.56 0-1.57.56-2.81 1.69-3.71 1.12-.9 2.78-1.35 4.96-1.35 3.49 0 5.77 1.23 6.85 3.68h.03l.27.64-2.02.88-.24-.57h-.03c-.38-.85-.93-1.5-1.65-1.92-.72-.43-1.78-.64-3.17-.64-2.95 0-4.42.98-4.42 2.93 0 .74.17 1.33.51 1.77.34.44.84.75 1.52.93.25.07.48.12.69.17.21.05.43.08.66.12.22.03.48.06.76.08.28.02.6.06.96.1.81.09 1.61.21 2.39.35.79.15 1.49.4 2.11.76.62.36 1.12.84 1.5 1.45.38.61.57 1.42.57 2.43 0 1.62-.59 2.88-1.75 3.79-1.17.91-2.89 1.37-5.16 1.37-3.78 0-6.21-1.39-7.29-4.18-.02-.02-.03-.04-.03-.05s-.01-.03-.03-.05l-.17-.44 2.02-.88.27.67v.03c.74 1.93 2.46 2.9 5.16 2.9 3.17 0 4.76-1.02 4.76-3.07zm9.88 4.64c-.81-.26-1.46-.67-1.96-1.23-.49-.56-.84-1.27-1.05-2.13-.2-.85-.3-1.89-.3-3.1v-8.84h-3.81V15.5h3.81v-4.05H222v4.05h5.5v2.09H222v8.77c0 .94.07 1.73.22 2.34.15.62.4 1.11.76 1.47.36.36.85.61 1.48.76.63.15 1.42.22 2.36.22h.61v2.16h-1.32c-1.24-.02-2.26-.16-3.07-.42zM81.06 14.81c-2.74 0-5.01.35-6.81 1.05l-1.38.51v23.91h5.09v-7.22c1.01.2 1.9.3 2.66.3 2.58 0 4.53-.62 5.83-1.87 1.3-1.25 1.96-3.06 1.96-5.45v-4.25c0-2.25-.6-3.97-1.8-5.18-1.2-1.2-3.05-1.8-5.55-1.8zm2.23 11.23c0 1.84-1.02 2.76-3.07 2.76-.65 0-1.41-.07-2.26-.2v-8.97l.2-.03c.38-.09.76-.15 1.15-.19.38-.03.76-.05 1.15-.05 1.89 0 2.83.82 2.83 2.46v4.21zm16.47-6.21l1.5-4.52h-4.22v-4.05h-5.09v4.05h-3.03v4.52h3.03v5.87c0 1.53.16 2.78.47 3.76.31.98.8 1.75 1.45 2.33.65.57 1.5.97 2.55 1.2s2.29.34 3.73.34h.8v-4.69h-.8c-.58 0-1.07-.04-1.47-.13-.39-.09-.71-.25-.96-.49s-.42-.56-.52-.96c-.1-.4-.15-.92-.15-1.55v-5.66h2.72zm10.08-5.02c-3.55 0-5.96 1.17-7.22 3.51l-.51.98 4.21 1.75.54-.71c.63-.83 1.56-1.25 2.8-1.25 1.73 0 2.6.83 2.6 2.49v.74c-.36-.02-.74-.04-1.13-.05-.39-.01-.82-.02-1.26-.02-1.42 0-2.62.1-3.62.29-1 .19-1.81.5-2.43.93-.62.43-1.07.99-1.37 1.7-.29.71-.44 1.58-.44 2.61 0 .94.13 1.77.39 2.48s.69 1.29 1.28 1.74c.6.45 1.39.79 2.38 1.01.99.22 2.21.34 3.68.34 2.9 0 5.02-.3 6.37-.91.04-.02.13-.06.25-.12s.26-.12.42-.19c.18-.09.37-.18.57-.27v-9.95c0-4.74-2.51-7.11-7.52-7.11zm2.43 14.43l-.3.03c-.29.05-.65.08-1.08.1-.43.02-.93.03-1.52.03-.88 0-1.47-.14-1.79-.42-.32-.28-.47-.69-.47-1.23s.16-.92.49-1.2c.33-.28.94-.42 1.84-.42.13 0 .34 0 .62.02.28.01.57.02.88.02s.58 0 .84.02c.26.01.42.02.49.02v3.03zM68.71 10.8c-1.73-1.59-4.19-2.39-7.37-2.39s-5.61.8-7.34 2.39c-1.73 1.59-2.59 3.81-2.59 6.66v6.8c0 2.85.86 5.07 2.59 6.66 1.73 1.59 4.17 2.39 7.34 2.39s5.64-.8 7.37-2.39c1.73-1.59 2.59-3.81 2.59-6.66v-6.8c0-2.85-.86-5.07-2.59-6.66zm-2.89 13.56c0 2.63-1.49 3.94-4.48 3.94-1.44 0-2.54-.33-3.3-.99-.76-.66-1.14-1.64-1.14-2.95v-7c0-1.3.38-2.28 1.14-2.95.76-.66 1.86-.99 3.3-.99 2.98 0 4.48 1.31 4.48 3.94v7z"/><path d="M40.25 0c.59 0 1.08.48 1.08 1.08v9.95c0 .59-.48 1.08-1.08 1.08h-9.57c-.59 0-1.42.34-1.84.76l-1.28 1.28c-.42.42-.76 1.24-.76 1.84v7.15c0 .59-.48 1.08-1.08 1.08h-7.15c-.59 0-1.42.34-1.84.76l-1.28 1.28c-.42.42-.76 1.24-.76 1.84v4.73c0 .59-.48 1.08-1.08 1.08H8.88c-.59 0-1.42.34-1.84.76l-1.28 1.28c-.42.42-.76 1.24-.76 1.84v2.31c0 .59-.48 1.08-1.08 1.08H1.24c-.59 0-1.08-.48-1.08-1.08h.01v-2.69c0-.59.48-1.08 1.08-1.08h2.3c.59 0 1.42-.34 1.84-.76l1.28-1.28c.42-.42.76-1.24.76-1.84v-4.73c0-.59.48-1.08 1.08-1.08h4.73c.59 0 1.42-.34 1.84-.76l1.28-1.28c.42-.42.76-1.24.76-1.84v-7.15c0-.59.48-1.08 1.08-1.08h7.15c.59 0 1.42-.34 1.84-.76l1.28-1.28c.42-.42.76-1.24.76-1.84V1.08c0-.59.48-1.08 1.08-1.08h9.95zm0 14.51c.59 0 1.08.48 1.08 1.08v7.54c0 .59-.48 1.08-1.08 1.08h-7.16c-.59 0-1.42.34-1.84.76l-1.28 1.28c-.42.42-.76 1.24-.76 1.84v4.73c0 .59-.48 1.08-1.08 1.08H23.4c-.59 0-1.42.34-1.84.76l-1.28 1.28c-.42.42-.76 1.24-.76 1.84v2.31c0 .59-.48 1.08-1.08 1.08h-2.69c-.59 0-1.08-.48-1.08-1.08V37.4c0-.59.48-1.08 1.08-1.08h2.31c.59 0 1.42-.34 1.84-.76l1.28-1.28c.42-.42.76-1.24.76-1.84v-4.73c0-.59.48-1.08 1.08-1.08h4.73c.59 0 1.42-.34 1.84-.76l1.28-1.28c.42-.42.76-1.24.76-1.84v-7.16c0-.59.48-1.08 1.08-1.08h7.54zm0 12.14c.59 0 1.07.48 1.07 1.07v5.1c0 .59-.48 1.07-1.07 1.07h-4.72c-.59 0-1.41.34-1.83.76l-1.28 1.28c-.42.42-.76 1.24-.76 1.83v2.31c0 .59-.48 1.07-1.07 1.07H27.9c-.59 0-1.07-.48-1.07-1.07v-2.69c0-.59.48-1.07 1.07-1.07h2.31c.59 0 1.41-.34 1.83-.76l1.28-1.28c.42-.42.76-1.24.76-1.83v-4.72c0-.59.48-1.07 1.07-1.07h5.1zm-.01 9.61c.6 0 1.09.47 1.09 1.05v2.62c0 .58-.49 1.05-1.09 1.05h-2.72c-.6 0-1.09-.47-1.09-1.05v-2.62c0-.58.49-1.05 1.09-1.05h2.72z" fill="url(#a)"/></svg></a>
+
+<button class="header-nav-hamburger hamburger hamburger--spring" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+
+<nav class="header-nav" role="navigation">
+  <div class="header-nav-container">
+    <form role="search" method="get" class="search-form" action="https://theanalyst.com">
+  <label class="search-form__label"><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M10.605 0L15 4.394v6.212l-1.49 1.489 6.404 6.405-1.414 1.414-6.405-6.404-1.49 1.49H4.394L0 10.606V4.393L4.393 0h6.212zm-.829 2H5.221L2 5.221v4.556L5.223 13h4.552L13 9.776V5.223L9.776 2z" fill-opacity=".5" fill-rule="evenodd"/></svg>
+    <input type="text" class="search-form__input" value="" name="s"
+           autocomplete="off" placeholder="Search"/>
+  </label>
+  <button type="submit" class="search-form__submit button" disabled>
+    <span class="search-form__submit--mbl"><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M10.605 0L15 4.394v6.212l-1.49 1.489 6.404 6.405-1.414 1.414-6.405-6.404-1.49 1.49H4.394L0 10.606V4.393L4.393 0h6.212zm-.829 2H5.221L2 5.221v4.556L5.223 13h4.552L13 9.776V5.223L9.776 2z" fill-opacity=".5" fill-rule="evenodd"/></svg></span>
+    <span class="search-form__submit--dsktp">Search</span>
+  </button>
+</form>
+    
+<ul class="header-nav-menu menu-list">
+
+  <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39456">
+      <a class="menu-item-nav-link"href="/eu/2022/08/2022-23-football-stats/">Opta Stat Hubs</a>
+      </li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-86774">
+      <a class="menu-item-nav-link"href="/eu/2023/08/opta-football-predictions/">Opta Predictions</a>
+      </li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-138 menu-item-has-children">
+    <div class="menu-subnav-header">    <a class="menu-item-nav-link"href="/eu/sport/football/">Football</a>
+    </div>              
+<ul style="--start-color:#b225c3;--end-color:#e02b8f;" class="header-nav-menu menu-sublist">
+
+  <li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-139">
+      <a class="menu-item-nav-link"href="/eu/sport/football/premier-league/">Premier League</a>
+      </li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-140">
+      <a class="menu-item-nav-link"href="/eu/sport/football/champions-league/">Champions League</a>
+      </li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-141">
+      <a class="menu-item-nav-link"href="/eu/sport/football/la-liga/">La Liga</a>
+      </li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-142">
+      <a class="menu-item-nav-link"href="/eu/sport/football/bundesliga/">Bundesliga</a>
+      </li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-143">
+      <a class="menu-item-nav-link"href="/eu/sport/football/serie-a/">Serie A</a>
+      </li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-144">
+      <a class="menu-item-nav-link"href="/eu/sport/football/ligue-1/">Ligue 1</a>
+      </li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-91728">
+      <a class="menu-item-nav-link"href="/eu/sport/football/efl/">EFL</a>
+      </li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16223">
+      <a class="menu-item-nav-link"href="/eu/sport/football/wsl/">WSL</a>
+      </li>
+
+</ul>
+  </li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-159">
+      <a class="menu-item-nav-link"href="/eu/sport/rugby/">Rugby</a>
+      </li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-94668 menu-item-has-children">
+    <div class="menu-subnav-header">    <a class="menu-item-nav-link"href="/eu/opta-games/">Free Games</a>
+    </div>              
+<ul style="--start-color:#E56329;--end-color:#EB842C;" class="header-nav-menu menu-sublist">
+
+  <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-93943">
+      <a class="menu-item-nav-link"href="https://optamax.theanalyst.com/preview?utm_medium=navigation&utm_source=theanalyst&utm_campaign=landing-page-preview"target="_blank">Opta Max</a>
+      </li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-93944">
+      <a class="menu-item-nav-link"href="https://optafive.theanalyst.com/epl?utm_medium=navigation&utm_source=theanalyst&utm_campaign=optagames"target="_blank">Opta Five</a>
+      </li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-93945">
+      <a class="menu-item-nav-link"href="https://optaplayerratings.theanalyst.com/preview?utm_medium=navigation&utm_source=theanalyst&utm_campaign=landing-page-preview"target="_blank">Opta Player Ratings</a>
+      </li>
+
+</ul>
+  </li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-145 menu-item-has-children">
+    <div class="menu-subnav-header">    <a class="menu-item-nav-link"href="/eu/sport/american-football/">American Football</a>
+    </div>              
+<ul style="--start-color:#df306c;--end-color:#e62c4a;" class="header-nav-menu menu-sublist">
+
+  <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-146">
+      <a class="menu-item-nav-link"href="/eu/sport/american-football/nfl/">NFL</a>
+      </li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-147">
+      <a class="menu-item-nav-link"href="/eu/sport/american-football/fantasy/">Fantasy</a>
+      </li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-43020">
+      <a class="menu-item-nav-link"href="/eu/sport/american-football/fbs/">FBS</a>
+      </li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-149">
+      <a class="menu-item-nav-link"href="/eu/sport/american-football/fcs/">FCS</a>
+      </li>
+
+</ul>
+  </li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-83188">
+      <a class="menu-item-nav-link"href="/eu/sport/stat-viz-quiz/">Newsletter</a>
+      </li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-156 menu-item-has-children">
+    <div class="menu-subnav-header">    <a class="menu-item-nav-link">Other</a>
+    </div>              
+<ul style="--start-color:#eba221;--end-color:#e5c332;" class="header-nav-menu menu-sublist">
+
+  <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-153">
+      <a class="menu-item-nav-link"href="/eu/sport/tennis/">Tennis</a>
+      </li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-160">
+      <a class="menu-item-nav-link"href="/eu/sport/cricket/">Cricket</a>
+      </li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-158">
+      <a class="menu-item-nav-link"href="/eu/sport/golf/">Golf</a>
+      </li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-157">
+      <a class="menu-item-nav-link"href="/eu/sport/baseball/">Baseball</a>
+      </li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-150 menu-item-has-children">
+    <div class="menu-subnav-header">    <a class="menu-item-nav-link"href="/eu/sport/basketball/">Basketball</a>
+    </div>              
+<ul style="--start-color:#e56329;--end-color:#eb842c;" class="header-nav-menu menu-sublist">
+
+  <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-151">
+      <a class="menu-item-nav-link"href="/eu/sport/basketball/nba/">NBA</a>
+      </li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-152">
+      <a class="menu-item-nav-link"href="/eu/sport/basketball/ncaa/">NCAA</a>
+      </li>
+
+</ul>
+  </li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1990">
+      <a class="menu-item-nav-link"href="/eu/sport/metric-explainers/">Metric Explainers</a>
+      </li>
+
+</ul>
+  </li>
+
+</ul>
+    <button class="search-toggle">
+      <span class="search-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10.7 0l4.4 4.4v6.2l-1.5 1.5 6.4 6.4-1.4 1.5-6.4-6.4-1.5 1.5H4.4L0 10.7V4.4L4.4 0h6.3zm-.9 2H5.2L2 5.2v4.6L5.2 13h4.6L13 9.8V5.2L9.8 2z" fill="#fff"/></svg></span>
+    </button>
+    <a href="https://www.statsperform.com/" target="_blank" class="header-nav-stats-perform-link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 91.13 37.27"><defs><style>.cls-1{opacity:.75}.cls-2{fill:#fff}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g class="cls-1"><path class="cls-2" d="M88.86 26.21l-3.07 5.62-3.03-5.62h-2.25v10.83h2.32v-6.1l2.15 3.82h1.6l2.17-3.88v6.16h2.38V26.21h-2.27zm-12.79 4.44a1.26 1.26 0 01-.94.32H73v-2.5h2.12a1.27 1.27 0 01.94.33 1.25 1.25 0 01.33.92 1.23 1.23 0 01-.33.93zM77.31 33a.93.93 0 00-.1-.16 2.67 2.67 0 001.37-1.27 3.27 3.27 0 00.3-.88 4.53 4.53 0 00.1-1 4 4 0 00-.26-1.47 3.07 3.07 0 00-.72-1.08 3.11 3.11 0 00-1.14-.69 4.39 4.39 0 00-1.49-.24h-4.84V37H73v-3.8h.63a3 3 0 01.55 0 1 1 0 01.39.14 1.32 1.32 0 01.3.28 2.42 2.42 0 01.27.44L76.57 37h2.88l-1.92-3.66-.22-.34zm-10.64.22c0 1.19-.68 1.78-2 1.78a2.24 2.24 0 01-1.5-.45 1.68 1.68 0 01-.51-1.33V30a1.68 1.68 0 01.51-1.33 2.24 2.24 0 011.5-.45c1.35 0 2 .59 2 1.78v3.18zM68 27.07a5.69 5.69 0 00-6.67 0 3.91 3.91 0 00-1.17 3v3.08a3.91 3.91 0 001.17 3 5.69 5.69 0 006.67 0 3.91 3.91 0 001.17-3v-3.06a3.91 3.91 0 00-1.17-3zm-16.18 9.97h2.49v-4.13h3.38l.75-2.26h-4.13v-2.18h4.89v-2.26h-7.38v10.83zm-4.44-6.39a1.28 1.28 0 01-.94.32h-2.12v-2.5h2.12a1.13 1.13 0 011.26 1.25 1.26 1.26 0 01-.32.93zm1.45 2.73l-.21-.38a.77.77 0 00-.11-.16 2.88 2.88 0 00.83-.53 3.1 3.1 0 00.55-.74 3.27 3.27 0 00.3-.88 5.25 5.25 0 00.09-1 4 4 0 00-.28-1.44 3.23 3.23 0 00-.72-1.11 3.15 3.15 0 00-1.13-.69 4.45 4.45 0 00-1.5-.24h-4.82V37h2.49v-3.8h.62a2.88 2.88 0 01.55 0 1 1 0 01.4.14 1.32 1.32 0 01.3.28 3.2 3.2 0 01.26.44L47.87 37h2.88l-1.92-3.66zm-13.24-.68h3.35l.75-2.26h-4.1v-1.97h4.89v-2.26H33.1v10.83h7.54v-2.27h-5.05V32.7zm-4.66-5.51a3.16 3.16 0 00-1.17-.72 4.48 4.48 0 00-1.56-.26h-4.71V37H26v-8.53h2a1.43 1.43 0 011.06.38 1.4 1.4 0 01.36 1 1.38 1.38 0 01-.36 1 1.46 1.46 0 01-1.06.36h-.59l-.75 2.27h1.6a4.58 4.58 0 001.57-.25 3.3 3.3 0 001.17-.72 3.08 3.08 0 00.74-1.14 4.66 4.66 0 000-3.07 3.1 3.1 0 00-.75-1.15zm37.57-2.87a4.44 4.44 0 001.43-.7 3.2 3.2 0 00.9-1.11 3.73 3.73 0 000-3 2.55 2.55 0 00-.87-1 3.94 3.94 0 00-1.28-.51 9.83 9.83 0 00-1.49-.28l-.5-.06-.4-.06-.29-.09-.35-.1c-.47-.17-.7-.44-.7-.83a.87.87 0 01.42-.8 2.79 2.79 0 011.38-.25 1.85 1.85 0 011.8 1l.2.39 2.29-1-.2-.42a3.69 3.69 0 00-1.5-1.7 5.27 5.27 0 00-2.59-.55 6.52 6.52 0 00-1.85.25 4.17 4.17 0 00-1.36.71 3.13 3.13 0 00-.85 1.07 3.32 3.32 0 00-.29 1.39 3.74 3.74 0 00.41 1.63 2.65 2.65 0 00.92 1 4 4 0 001.31.48c.5.1 1 .18 1.59.26a5.13 5.13 0 011.53.34.79.79 0 01.53.75c0 .81-.68 1.21-2 1.21a2 2 0 01-2-1.05.31.31 0 000-.12.85.85 0 01-.1-.19 2.17 2.17 0 01-.12-.26l-2.27.81.21.58q.91 2.47 4.29 2.47a6.88 6.88 0 001.89-.24zM61.17 13.5h-9.02l.71 2.26H56v8.57h2.47v-8.57h2.7V13.5zm-15 10.83l.32-.96.35-1.04.67-2.01.32-.96.58-1.75.33-1 1.22 3.71H48.3l-.67 2.01h2.99l.65 2H54L49.95 13.5h-2.32l-4.08 10.83h2.62zm-.75-10.83h-9.34v2.26h3.02v8.57h2.48v-8.57h3.1l.74-2.26zM30.78 24.56a6.88 6.88 0 001.89-.24 4.38 4.38 0 001.42-.7 3 3 0 00.9-1.11 3.24 3.24 0 00.32-1.44 3.41 3.41 0 00-.31-1.56 2.72 2.72 0 00-.87-1 3.94 3.94 0 00-1.28-.51 10.07 10.07 0 00-1.49-.28l-.5-.06-.4-.06-.35-.08-.34-.1c-.47-.17-.7-.44-.7-.83a.87.87 0 01.42-.8 2.79 2.79 0 011.38-.25 1.85 1.85 0 011.8 1l.2.39 2.29-1-.2-.42a3.69 3.69 0 00-1.5-1.7 5.27 5.27 0 00-2.59-.55 6.52 6.52 0 00-1.85.25 4.07 4.07 0 00-1.36.71 3 3 0 00-.85 1.07 3.32 3.32 0 00-.29 1.39 3.74 3.74 0 00.41 1.63 2.65 2.65 0 00.92 1 3.91 3.91 0 001.31.48c.5.1 1 .18 1.59.26a5.13 5.13 0 011.53.34.79.79 0 01.53.75c0 .81-.68 1.21-2 1.21a1.94 1.94 0 01-2-1.05.42.42 0 000-.12 1.72 1.72 0 01-.09-.19 2.17 2.17 0 01-.12-.26l-2.27.81.21.58q.92 2.47 4.29 2.47zM8.25 15.58H4.08L0 27.87h4.18l4.07-12.29zM15.53 19l-4.44 13.32h4.18L19.71 19zm-.22-5.68l-8 24H3.16l8-24z"/></g><g class="cls-1"><path class="cls-2" d="M15.41 0H19l.85.86V3l-.85.89h-2.53v2.32h-1.06zm3 3.1l.37-.38V1.16l-.33-.37h-2V3.1zm3.25 2.22V.89l.89-.89h2.84l.88.89v4.43l-.88.89h-2.84zm3.14.07l.41-.39V1.24L24.8.82h-1.66l-.42.42V5l.42.42zM27.85 0h1l.88 5.26L30.84 0h1.38l1.09 5.26.88-5.26h.91l-1.16 6.21h-1.35L31.5.94l-1.1 5.27H29zm8.96 0h3.83v.84h-2.77v1.83h2.55v.82h-2.55v1.88h2.79v.84h-3.85zm5.83 0h3.7l.82.84v1.9l-.75.76.85 2.71h-1.09l-.78-2.55h-1.68v2.55h-1.07zm3.07 2.86l.39-.39V1.15l-.37-.38h-2v2.09zM49.22 0h3.83v.84h-2.76v1.83h2.54v.82h-2.54v1.88h2.78v.84h-3.85zm5.83 0h3.62l.9.89v4.43l-.9.89h-3.62zm3 5.39L58.5 5V1.24l-.42-.42h-2v4.57zM64.83 0h3.72l.79.79v1.55l-.67.66.68.67v1.75l-.79.79h-3.73zm3 2.6l.4-.39V1.13l-.3-.35h-2V2.6zm.06 2.81l.35-.33V3.82l-.43-.43h-2v2zm4.83-1.16L70.79 0h1.14l1.37 3.19L74.68 0h1l-1.9 4.25v2h-1.06z"/></g></g></g></svg>
+    </a>
+  </div>
+</nav>
+  </header>
+
+  
+  <article class="post post__type--post" id="post__75289">
+    <header>
+              <img class="post-hero-image" src="https://theanalyst.com/wp-content/uploads/2023/05/101-premier-league-facts.jpg" alt="101 Best Premier League Facts of the 2022-23 Season"
+             srcset="https://theanalyst.com/wp-content/uploads/2023/05/101-premier-league-facts.jpg 1360w, https://theanalyst.com/wp-content/uploads/2023/05/101-premier-league-facts-300x209.jpg 300w, https://theanalyst.com/wp-content/uploads/2023/05/101-premier-league-facts-1024x715.jpg 1024w, https://theanalyst.com/wp-content/uploads/2023/05/101-premier-league-facts-768x536.jpg 768w" sizes="(max-width: 1360px) 100vw, 1360px" />
+      
+                                <div class="post-pills">
+                                            <a class="pill post-taxonomy-pill" href="/eu/sport/football/" style="--start-color:#b225c3;--end-color:#e02b8f;">Football</a>
+                      </div>
+              
+              <div class="post-title">
+          <h1>101 Best Premier League Facts of the 2022-23 Season</h1>
+        </div>
+      
+                          <div class="post-meta">
+                      <time class="post-meta-time" datetime="2023-05-30 14:52:00">May 30, 2023</time>
+          
+                      <div class="post-meta-authors"><a class="post-meta-author"
+                   href="/eu/author/uk-data-insights-team/">UK Data Insights Team <span>/ Author</span></a></div>
+                  </div>
+      
+              <div class="post-social">
+                      <div class="addtoany_shortcode"><div class="a2a_kit a2a_kit_size_10 addtoany_list" data-a2a-url="https://theanalyst.com/eu/2023/05/101-best-premier-league-facts-2022-23/" data-a2a-title="101 Best Premier League Facts of the 2022-23 Season"><a class="a2a_button_twitter" href="https://www.addtoany.com/add_to/twitter?linkurl=https%3A%2F%2Ftheanalyst.com%2Feu%2F2023%2F05%2F101-best-premier-league-facts-2022-23%2F&amp;linkname=101%20Best%20Premier%20League%20Facts%20of%20the%202022-23%20Season" title="Twitter" rel="nofollow noopener" target="_blank"></a><a class="a2a_button_whatsapp" href="https://www.addtoany.com/add_to/whatsapp?linkurl=https%3A%2F%2Ftheanalyst.com%2Feu%2F2023%2F05%2F101-best-premier-league-facts-2022-23%2F&amp;linkname=101%20Best%20Premier%20League%20Facts%20of%20the%202022-23%20Season" title="WhatsApp" rel="nofollow noopener" target="_blank"></a><a class="a2a_button_email" href="https://www.addtoany.com/add_to/email?linkurl=https%3A%2F%2Ftheanalyst.com%2Feu%2F2023%2F05%2F101-best-premier-league-facts-2022-23%2F&amp;linkname=101%20Best%20Premier%20League%20Facts%20of%20the%202022-23%20Season" title="Email" rel="nofollow noopener" target="_blank"></a><a class="a2a_dd addtoany_share_save addtoany_share" href="https://www.addtoany.com/share"></a></div></div>
+                  </div>
+          </header>
+
+    <div class="post-content">
+              <div class="addtoany_shortcode"><div class="a2a_kit a2a_kit_size_10 addtoany_list" data-a2a-url="https://theanalyst.com/eu/2023/05/101-best-premier-league-facts-2022-23/" data-a2a-title="101 Best Premier League Facts of the 2022-23 Season"><a class="a2a_button_twitter" href="https://www.addtoany.com/add_to/twitter?linkurl=https%3A%2F%2Ftheanalyst.com%2Feu%2F2023%2F05%2F101-best-premier-league-facts-2022-23%2F&amp;linkname=101%20Best%20Premier%20League%20Facts%20of%20the%202022-23%20Season" title="Twitter" rel="nofollow noopener" target="_blank"></a><a class="a2a_button_whatsapp" href="https://www.addtoany.com/add_to/whatsapp?linkurl=https%3A%2F%2Ftheanalyst.com%2Feu%2F2023%2F05%2F101-best-premier-league-facts-2022-23%2F&amp;linkname=101%20Best%20Premier%20League%20Facts%20of%20the%202022-23%20Season" title="WhatsApp" rel="nofollow noopener" target="_blank"></a><a class="a2a_button_email" href="https://www.addtoany.com/add_to/email?linkurl=https%3A%2F%2Ftheanalyst.com%2Feu%2F2023%2F05%2F101-best-premier-league-facts-2022-23%2F&amp;linkname=101%20Best%20Premier%20League%20Facts%20of%20the%202022-23%20Season" title="Email" rel="nofollow noopener" target="_blank"></a><a class="a2a_dd addtoany_share_save addtoany_share" href="https://www.addtoany.com/share"></a></div></div>
+            <div class="post-content-wrapper">
+        
+<p class="has-text-align-center"><strong><em>Thanks to our brilliant team at <a href="https://twitter.com/OptaJoe" target="_blank" rel="noreferrer noopener">OptaJoe</a>, we look back at the 2022-23 campaign with the 101 best Premier League facts of the season.</em></strong></p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-dots"/>
+
+
+
+<h2 class="has-text-align-center wp-block-heading"><strong>August</strong></h2>
+
+
+
+<ul>
+<li>On 13 August 2022, Manchester City ended the day top and Manchester United ended the day bottom of the top-flight table for the first time since 29 November 1929.</li>
+</ul>
+
+
+
+<ul>
+<li>Erik ten Hag became the first manager to lose each of his first two games in charge of Manchester United since John Chapman in November 1921.</li>
+</ul>
+
+
+
+<ul>
+<li>Harry Kane netted his 185th Premier League goal for Tottenham Hotspur against Wolves, overtaking Sergio Aguero’s record for Premier League goals for a single club (184 for Manchester City).</li>
+</ul>
+
+
+
+<ul>
+<li>Brenden Aaronson’s opening goal in Leeds&#8217; 3-0 win against Chelsea was the first time an American player scored under an American manager (Jesse Marsch) in Premier League history.</li>
+</ul>
+
+
+
+<ul>
+<li>Darwin Núñez came off the bench to score and assist on his Premier League debut for Liverpool against Fulham, only the third player to score and assist as a substitute on debut, along with Sergio Aguero (2011) and Alvaro Morata (2017).</li>
+</ul>
+
+
+
+<ul>
+<li>Liverpool beat Bournemouth 9-0 in August to become the joint <a href="https://theanalyst.com/eu/2023/03/biggest-premier-league-wins/"><strong>biggest win in Premier League history</strong></a>, equalling three other 9-0 wins: Man Utd 9-0 Ipswich (1995), Southampton 0-9 Leicester (2019) and Man Utd 9-0 Southampton (2021).</li>
+</ul>
+
+
+
+<ul>
+<li>Nottingham Forest’s starting XI against Tottenham was made up of players who were all British, the first entirely British and Northern Irish starting XI for a Premier League game since Blackpool’s against Man Utd in May 2011.</li>
+</ul>
+
+
+
+<ul>
+<li>Jefferson Lerma scored after one minute and 58 seconds on the opening day for Bournemouth against Aston Villa, the quickest goal on MD1 by a newly promoted side in Premier League history.</li>
+</ul>
+
+
+<div class="wp-block-image">
+<figure id="figure-75302"class="aligncenter size-large"><img loading="lazy" decoding="async" width="1024" height="576" src="https://theanalyst.com/wp-content/uploads/2023/05/darwin-nunez-liverpool-debut-1024x576.png" alt="Darwin Nunez Liverpool debut" class="wp-image-75302" srcset="https://theanalyst.com/wp-content/uploads/2023/05/darwin-nunez-liverpool-debut-1024x576.png 1024w, https://theanalyst.com/wp-content/uploads/2023/05/darwin-nunez-liverpool-debut-300x169.png 300w, https://theanalyst.com/wp-content/uploads/2023/05/darwin-nunez-liverpool-debut-768x432.png 768w, https://theanalyst.com/wp-content/uploads/2023/05/darwin-nunez-liverpool-debut-1536x864.png 1536w, https://theanalyst.com/wp-content/uploads/2023/05/darwin-nunez-liverpool-debut.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></div>
+
+
+<h2 class="has-text-align-center wp-block-heading"><strong>September</strong></h2>
+
+
+
+<ul>
+<li>Due to the postponements of Premier League fixtures in September following the death of Queen Elizabeth II and international fixtures taking place at the end of the month, only 18 Premier League games were played this month, the fewest games ever played in the month of September in a top-flight season.</li>
+</ul>
+
+
+
+<ul>
+<li>In their 3-1 win against Arsenal, Manchester United’s Antony became the youngest Brazilian to score on his Premier League debut (22 years 192 days old). He also became the 100th Brazilian to play in the Premier League.</li>
+</ul>
+
+
+
+<ul>
+<li>Son Heung-Min came off the bench to score a hat-trick in Tottenham’s 6-2 win over Leicester, the seventh player to score a Premier League hat-trick as a substitute and first since Steven Naismith in September 2015 for Everton vs. Chelsea.</li>
+</ul>
+
+
+
+<ul>
+<li>Harry Kane scored his 18th Premier League goal against Leicester City in September. Only Alan Shearer (20 versus Leeds United) has scored more against an opponent in Premier League history.</li>
+</ul>
+
+
+
+<ul>
+<li>Aged 15 years and 181 days, Arsenal&#8217;s Ethan Nwaneri became the <a href="https://theanalyst.com/eu/2022/09/youngest-premier-league-players/"><strong>youngest player in Premier League history</strong></a> when he came on as a substitute against Brentford – he was the first player to appear in the competition before turning 16.</li>
+</ul>
+
+
+<div class="wp-block-image">
+<figure id="figure-75303"class="aligncenter size-large"><img loading="lazy" decoding="async" width="1024" height="576" src="https://theanalyst.com/wp-content/uploads/2023/05/ethan-nwaneri-arsenal-1024x576.png" alt="Ethan Nwaneri Arsenal" class="wp-image-75303" srcset="https://theanalyst.com/wp-content/uploads/2023/05/ethan-nwaneri-arsenal-1024x576.png 1024w, https://theanalyst.com/wp-content/uploads/2023/05/ethan-nwaneri-arsenal-300x169.png 300w, https://theanalyst.com/wp-content/uploads/2023/05/ethan-nwaneri-arsenal-768x432.png 768w, https://theanalyst.com/wp-content/uploads/2023/05/ethan-nwaneri-arsenal-1536x864.png 1536w, https://theanalyst.com/wp-content/uploads/2023/05/ethan-nwaneri-arsenal.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></div>
+
+
+<h2 class="has-text-align-center wp-block-heading"><strong>October</strong></h2>
+
+
+
+<ul>
+<li>Leandro Trossard (then at Brighton) scored the third Premier League hat-trick at Anfield against Liverpool, after Peter Ndlovu in March 1995 for Coventry and Andrey Arshavin in April 2009 for Arsenal.</li>
+</ul>
+
+
+
+<ul>
+<li>Harry Kane became the first player to score 100 away Premier League goals, scoring a penalty in a 3-1 defeat at the Emirates against Arsenal.</li>
+</ul>
+
+
+
+<ul>
+<li>Wolves had eight different Portuguese players in their starting XI against West Ham, the most starting players from a specific nation outside of England any team has had in a Premier League match.</li>
+</ul>
+
+
+
+<ul>
+<li>Manchester City 6-3 Manchester United became the highest-scoring Manchester derby in history in what was the 187th meeting between the teams.</li>
+</ul>
+
+
+
+<ul>
+<li>Aged 22 years and 127 days when scoring a hat-trick versus Man Utd, Phil Foden became the youngest player to reach 50 goals under Pep Guardiola, surpassing Lionel Messi (22y 164d).</li>
+</ul>
+
+
+
+<ul>
+<li>Erling Haaland and Phil Foden became the third and fourth Manchester City players respectively to score a hat-trick versus Manchester United after Francis Lee in December 1970 and Horace Barnes in October 1921.</li>
+</ul>
+
+
+
+<ul>
+<li>In Haaland and Foden, Man City were only the third side to have two hat-trick scorers in a single Premier League game, after Arsenal versus Southampton in May 2003 (Jermaine Pennant, Robert Pires) and Leicester against Southampton in October 2019 (Ayoze Pérez, Jamie Vardy).</li>
+</ul>
+
+
+
+<ul>
+<li>In their 2-1 win against Everton in October, Cristiano Ronaldo scored the 700th club goal of his career, 20 years and 2 days after his first goal.</li>
+</ul>
+
+
+
+<ul>
+<li>Manchester City&#8217;s loss at Liverpool was their first Premier League away defeat since August 2021 against Spurs, ending what was the longest unbeaten away run in their league history (22 games).</li>
+</ul>
+
+
+
+<ul>
+<li>Spurs had 23 points in their first 10 Premier League games this season (W7 D2 L1), their most after 10 games in a top-flight season since 1963-64 (24, converting three pts/win).</li>
+</ul>
+
+
+
+<ul>
+<li>Virgil van Dijk ended on the losing side at Anfield with Liverpool in a Premier League game for the first time in a 2-1 defeat to Leeds, having gone 70 unbeaten beforehand (W59 D11).</li>
+</ul>
+
+
+
+<ul>
+<li>Against Nottingham Forest, Arsenal’s Bukayo Saka became the third-youngest player to reach 20 Premier League assists (21y 55d), behind only Cesc Fabregas (19y 352d) and Wayne Rooney (20y 300d).</li>
+</ul>
+
+
+
+<ul>
+<li>Marcus Rashford&#8217;s winner against West Ham was his 100th goal in all competitions for Manchester United, the first player to reach that milestone for the club since Wayne Rooney in 2009.</li>
+</ul>
+
+
+<div class="wp-block-image">
+<figure id="figure-75304"class="aligncenter size-large"><img loading="lazy" decoding="async" width="1024" height="576" src="https://theanalyst.com/wp-content/uploads/2023/05/haaland-foden-hat-tricks-1024x576.png" alt="Haaland Foden hat-tricks" class="wp-image-75304" srcset="https://theanalyst.com/wp-content/uploads/2023/05/haaland-foden-hat-tricks-1024x576.png 1024w, https://theanalyst.com/wp-content/uploads/2023/05/haaland-foden-hat-tricks-300x169.png 300w, https://theanalyst.com/wp-content/uploads/2023/05/haaland-foden-hat-tricks-768x432.png 768w, https://theanalyst.com/wp-content/uploads/2023/05/haaland-foden-hat-tricks-1536x864.png 1536w, https://theanalyst.com/wp-content/uploads/2023/05/haaland-foden-hat-tricks.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></div>
+
+
+<h2 class="has-text-align-center wp-block-heading"><strong>November</strong></h2>
+
+
+
+<ul>
+<li>Bournemouth became the first side in Premier League history to lose consecutive games despite leading by at least two goals in each match, losing 3-2 to Spurs from a 2-0 lead and 4-3 to Leeds after leading 3-1.</li>
+</ul>
+
+
+
+<ul>
+<li>Unai Emery’s first Premier League game in charge of Aston Villa was a 3-1 win over Man Utd, only the fourth time a manager’s first Premier League game in charge of a side resulted in a win over the Red Devils, after Dave Bassett with Sheffield United in 1992, Jose Mourinho with Chelsea in 2004 and Alan Curbishley with West Ham in 2006.</li>
+</ul>
+
+
+
+<ul>
+<li>James Milner made his 600th Premier League appearance in Liverpool’s 3-1 win over Southampton, becoming the fourth player to hit that milestone, along with Gareth Barry, Ryan Giggs and Frank Lampard.</li>
+</ul>
+
+
+
+<ul>
+<li>Leeds United’s Rodrigo and Crysencio Summerville both scored in four consecutive Leeds games in October and November, doing so against Fulham, Liverpool, Bournemouth and Tottenham. They were the first pair of teammates to score in four games in a row for a specific team in Premier League history.</li>
+</ul>
+
+
+
+<ul>
+<li>Leeds lost 4-3 against Spurs despite taking the lead three times in the match, becoming the first team to do so since Newcastle in December 2012 against Manchester United.</li>
+</ul>
+
+
+
+<ul>
+<li>Aged 18 years and 135 days in Man Utd&#8217;s victory over Fulham, Alejandro Garnacho became the youngest player to score a 90th-minute winner in the Premier League since Federico Macheda against Aston Villa, also for Manchester United, in April 2009 (17y 226d).</li>
+</ul>
+
+
+<div class="wp-block-image">
+<figure id="figure-75305"class="aligncenter size-large"><img loading="lazy" decoding="async" width="1024" height="576" src="https://theanalyst.com/wp-content/uploads/2023/05/alejandro-garnacho-fulham-goal-1024x576.png" alt="Alejandro Garnacho Fulham goal" class="wp-image-75305" srcset="https://theanalyst.com/wp-content/uploads/2023/05/alejandro-garnacho-fulham-goal-1024x576.png 1024w, https://theanalyst.com/wp-content/uploads/2023/05/alejandro-garnacho-fulham-goal-300x169.png 300w, https://theanalyst.com/wp-content/uploads/2023/05/alejandro-garnacho-fulham-goal-768x432.png 768w, https://theanalyst.com/wp-content/uploads/2023/05/alejandro-garnacho-fulham-goal-1536x864.png 1536w, https://theanalyst.com/wp-content/uploads/2023/05/alejandro-garnacho-fulham-goal.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></div>
+
+
+<h2 class="has-text-align-center wp-block-heading"><strong>December</strong></h2>
+
+
+
+<ul>
+<li>Arsenal were top of the league on Christmas Day, but ultimately finished second. Each of the last five times the Gunners have led the table at Christmas they&#8217;ve failed to win the title (also 1986-87, 1989-90, 2002-03 and 2007-08).</li>
+</ul>
+
+
+
+<ul>
+<li>Wolves became the fourth team to be bottom of the Premier League table on Christmas Day but avoid relegation to the Championship, after West Bromwich Albion (2004-05), Sunderland (2013-14) and Leicester City (2014-15).</li>
+</ul>
+
+
+
+<ul>
+<li>Harry Kane scored his 10th Premier League goal on Boxing Day in Spurs’ 2-2 draw with Brentford, becoming the outright leading scorer for Boxing Day goals in the Premier League.</li>
+</ul>
+
+
+
+<ul>
+<li>Kane&#8217;s goal against Brentford meant he&#8217;s scored against all 32 teams he&#8217;s faced in the Premier League, making him the only player to face more than one opponent in the division and net against 100% of them.</li>
+</ul>
+
+
+
+<ul>
+<li>Andrew Robertson registered his 54th <a href="https://theanalyst.com/eu/2023/04/most-premier-league-assists/"><strong>Premier League assist</strong></a> in Liverpool’s Boxing Day win over Aston Villa, overtaking Leighton Baines’ record of 53 assists by a defender in Premier League history.</li>
+</ul>
+
+
+
+<ul>
+<li>Stefan Bajcetic’s goal for Liverpool against Aston Villa aged 18 years and 65 days made him the second-youngest Spanish scorer in Premier League history, behind only Cesc Fàbregas (17 years, 113 days).</li>
+</ul>
+
+
+
+<ul>
+<li>Aged 18 years and 37 days in their 3-1 win at Leeds, Rico Lewis became the youngest Englishman to start a Premier League game for Manchester City since Micah Richards in May 2006 vs Blackburn (17 years, 317 days).</li>
+</ul>
+
+
+
+<ul>
+<li>Leicester defender Wout Faes scored two own goals in their defeat to Liverpool, only the fourth time a player scored two own goals in a Premier League match, along with Jamie Carragher in 1999 (Liverpool vs Man Utd), Michael Proctor in 2003 (Sunderland vs Charlton) and Jonathan Walters in 2013 (Stoke vs Chelsea).</li>
+</ul>
+
+
+<div class="wp-block-image">
+<figure id="figure-75306"class="aligncenter size-large"><img loading="lazy" decoding="async" width="1024" height="576" src="https://theanalyst.com/wp-content/uploads/2023/05/wout-faes-own-goals-1024x576.png" alt="Wout Faes own goals" class="wp-image-75306" srcset="https://theanalyst.com/wp-content/uploads/2023/05/wout-faes-own-goals-1024x576.png 1024w, https://theanalyst.com/wp-content/uploads/2023/05/wout-faes-own-goals-300x169.png 300w, https://theanalyst.com/wp-content/uploads/2023/05/wout-faes-own-goals-768x432.png 768w, https://theanalyst.com/wp-content/uploads/2023/05/wout-faes-own-goals-1536x864.png 1536w, https://theanalyst.com/wp-content/uploads/2023/05/wout-faes-own-goals.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></div>
+
+
+<h2 class="has-text-align-center wp-block-heading"><strong>January</strong></h2>
+
+
+
+<ul>
+<li>At Everton, Brighton scored four goals in a top-flight away game for the first time in their history, with all four coming inside the first hour of the match.</li>
+</ul>
+
+
+
+<ul>
+<li>In Brighton&#8217;s 4-1 win at Everton, Evan Ferguson (18y 76d) became the second-youngest player in Premier League history to both score and assist in a match, after Michael Owen in 1997 (17y 364d v Crystal Palace). Ferguson was also the youngest player to score in consecutive Premier League appearances since a 17-year-old Federico Macheda in 2009.</li>
+</ul>
+
+
+
+<ul>
+<li>Both Harry Kane and Son Heung-Min found the net against Crystal Palace in a 4-0 win for Spurs, the 34th time they’d both scored in a Premier League match, the most of any duo in Premier League history overtaking Mohamed Salah and Sadio Mane (33).</li>
+</ul>
+
+
+
+<ul>
+<li>Spurs striker Harry Kane made his 300th Premier League appearance against Crystal Palace, becoming just the second player in the competition’s history after Teddy Sheringham to score on his 100th, 200th and 300th appearance.</li>
+</ul>
+
+
+
+<ul>
+<li>In Chelsea’s loss to Fulham, João Félix became the first player to be sent off on his Premier League debut since Federico Fazio in October 2014 for Spurs vs. Man City, and the first ever player sent off on his Chelsea debut in the Premier League.</li>
+</ul>
+
+
+
+<ul>
+<li>Liverpool&#8217;s 3-0 loss at Brighton was their first Premier League defeat in a game kicking off at 15:00 on a Saturday since February 2017 (0-2 vs Hull). The Reds had been unbeaten in 32 such matches previously.</li>
+</ul>
+
+
+
+<ul>
+<li>Crystal Palace and Newcastle United played each other three times in all competitions this season, with all three ending in goalless draws. It was the first time two top-flight sides played out three goalless draws in a single season since Everton and Wimbledon in 1992-93.</li>
+</ul>
+
+
+<div class="wp-block-image">
+<figure id="figure-75307"class="aligncenter size-large"><img loading="lazy" decoding="async" width="1024" height="576" src="https://theanalyst.com/wp-content/uploads/2023/05/joao-felix-red-card-1024x576.png" alt="João Félix red card" class="wp-image-75307" srcset="https://theanalyst.com/wp-content/uploads/2023/05/joao-felix-red-card-1024x576.png 1024w, https://theanalyst.com/wp-content/uploads/2023/05/joao-felix-red-card-300x169.png 300w, https://theanalyst.com/wp-content/uploads/2023/05/joao-felix-red-card-768x432.png 768w, https://theanalyst.com/wp-content/uploads/2023/05/joao-felix-red-card-1536x864.png 1536w, https://theanalyst.com/wp-content/uploads/2023/05/joao-felix-red-card.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></div>
+
+
+<h2 class="has-text-align-center wp-block-heading"><strong>February</strong></h2>
+
+
+
+<ul>
+<li>Everton beat Arsenal 1-0 in Sean Dyche&#8217;s first game in charge, making him just the second manager to beat the league leaders in his first match at a club after Alan Curbishley with West Ham (vs Man Utd in December 2006).</li>
+</ul>
+
+
+
+<ul>
+<li>At Aston Villa, Leicester defender Harry Souttar became the first player to score an own goal on his Premier League debut since Issa Diop for West Ham versus Arsenal in August 2018.</li>
+</ul>
+
+
+
+<ul>
+<li>In Spurs&#8217; 1-0 win over Man City, Harry Kane became just the third player to reach 200 Premier League goals after Alan Shearer (260) and Wayne Rooney (208), needing the fewest appearances (304) to reach this milestone (Shearer 306, Rooney 462).</li>
+</ul>
+
+
+
+<ul>
+<li>At Fulham, both Scott McKenna and Willy Boly were substituted in the seventh minute for Nottingham Forest – this was the earliest any side has ever subbed off two of their starters in a Premier League game.</li>
+</ul>
+
+
+
+<ul>
+<li>A 2-0 victory against Everton was Jürgen Klopp&#8217;s 250th win as Liverpool manager in all competitions. It was his 414th game in charge of the Reds, reaching the milestone victory quicker than any previous three managers to do so for the club (Bob Paisley 448, Bill Shankly 472 and Tom Watson 539).</li>
+</ul>
+
+
+
+<ul>
+<li>Against Everton, Mohamed Salah reached 100 Premier League goal involvements in 104 games at Anfield (71 goals, 29 assists). Only Alan Shearer (74 at Ewood Park) and Thierry Henry (92 at Highbury) have reached a century of goal involvements at a ground in fewer appearances.</li>
+</ul>
+
+
+
+<ul>
+<li>Cody Gakpo became the sixth different player to score his first Premier League goal for Liverpool in a Merseyside derby, and the first since Raul Meireles in January 2011.</li>
+</ul>
+
+
+
+<ul>
+<li>In a 1-0 win at Chelsea, Southampton’s James Ward-Prowse scored his 17th <a href="https://theanalyst.com/eu/2023/05/most-free-kick-goals-premier-league"><strong>direct free-kick goal in the Premier League</strong></a>, moving just one behind record holder David Beckham (18).</li>
+</ul>
+
+
+
+<ul>
+<li>Newcastle were unbeaten for 17 games between August and February, their longest run without defeat in their top-flight history. The run began after defeat at Liverpool and ended with defeat to Liverpool.</li>
+</ul>
+
+
+
+<ul>
+<li>In West Ham&#8217;s 4-0 win against Nottingham Forest, David Moyes became the third different Premier League manager to record 250 wins in the competition after Alex Ferguson (528) and Arsène Wenger (476).</li>
+</ul>
+
+
+<div class="wp-block-image">
+<figure id="figure-75309"class="aligncenter size-large"><img loading="lazy" decoding="async" width="1024" height="576" src="https://theanalyst.com/wp-content/uploads/2023/05/ward-prowse-free-kick-goal-1024x576.png" alt="Ward Prowse Free Kick Goal" class="wp-image-75309" srcset="https://theanalyst.com/wp-content/uploads/2023/05/ward-prowse-free-kick-goal-1024x576.png 1024w, https://theanalyst.com/wp-content/uploads/2023/05/ward-prowse-free-kick-goal-300x169.png 300w, https://theanalyst.com/wp-content/uploads/2023/05/ward-prowse-free-kick-goal-768x432.png 768w, https://theanalyst.com/wp-content/uploads/2023/05/ward-prowse-free-kick-goal-1536x864.png 1536w, https://theanalyst.com/wp-content/uploads/2023/05/ward-prowse-free-kick-goal.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></div>
+
+
+<h2 class="has-text-align-center wp-block-heading"><strong>March</strong></h2>
+
+
+
+<ul>
+<li>Arsenal&#8217;s 4-0 win against Everton saw them become the first team in English Football League history to win 100 league games against a specific opponent.</li>
+</ul>
+
+
+
+<ul>
+<li>In a 2-0 win over Newcastle, Manchester City’s Ederson kept his 100th clean sheet in the Premier League (208th appearance): the third quickest that a goalkeeper has reached this milestone after Petr Cech (180 games) and Pepe Reina (198 games).</li>
+</ul>
+
+
+
+<ul>
+<li>Philip Billing’s goal for Bournemouth against Arsenal, timed at 9.11 seconds, was the second <a href="https://theanalyst.com/eu/2023/03/the-fastest-premier-league-goals/"><strong>quickest goal in Premier League history</strong></a>, behind only Shane Long’s strike for Southampton at Watford in April 2019 (7.69 seconds).</li>
+</ul>
+
+
+
+<ul>
+<li>All seven Premier League games on 4 March 2023 were won by the home team &#8211; only the second day in the competition&#8217;s history to have at least seven matches with all of them won by the home side, after 28 October 2000 (8/8).</li>
+</ul>
+
+
+
+<ul>
+<li>Liverpool recorded their biggest ever competitive win against Manchester United (7-0), surpassing their previous best set back in October 1895 (7-1 in the second tier). It was also Manchester United&#8217;s joint-heaviest ever competitive defeat, alongside 7-0 losses to Wolves in December 1931, Aston Villa in December 1930 and Blackburn Rovers in April 1926.</li>
+</ul>
+
+
+
+<ul>
+<li>Mohamed Salah became the first Liverpool player to score in six consecutive appearances in all competitions against Manchester United, and in doing so became Liverpool&#8217;s all-time leading goalscorer in the Premier League.</li>
+</ul>
+
+
+
+<ul>
+<li>Crystal Palace became the first team on record (since 2003-04) to fail to have a single shot on target in three consecutive Premier League matches (versus Liverpool, Aston Villa and Man City).</li>
+</ul>
+
+
+
+<ul>
+<li>In a 3-0 win at Fulham, Arsenal became the first side in English Football League history to win five consecutive London derbies away from home without conceding a goal. In that victory, Leandro Trossard became the first player in Premier League history to assist three goals before half-time in an away match.</li>
+</ul>
+
+
+
+<ul>
+<li>Wolves’ Jonny scored from 41 yards out against Leeds, the furthest distance a player had scored from in the Premier League since Wayne Rooney’s 58-yard strike for Everton against West Ham in November 2017.</li>
+</ul>
+
+
+
+<ul>
+<li>Casemiro became the first player to receive two red cards in a single Premier League season for Manchester United since Nemanja Vidic in 2013-14, while he is one of only two players to be sent off twice in his first Premier League campaign as a Man Utd player, after Darren Fletcher in 2003-04.</li>
+</ul>
+
+
+<div class="wp-block-image">
+<figure id="figure-75310"class="aligncenter size-large"><img loading="lazy" decoding="async" width="1024" height="576" src="https://theanalyst.com/wp-content/uploads/2023/05/billing-quickest-premier-league-goal-1024x576.png" alt="Billing Quickest Premier League Goal" class="wp-image-75310" srcset="https://theanalyst.com/wp-content/uploads/2023/05/billing-quickest-premier-league-goal-1024x576.png 1024w, https://theanalyst.com/wp-content/uploads/2023/05/billing-quickest-premier-league-goal-300x169.png 300w, https://theanalyst.com/wp-content/uploads/2023/05/billing-quickest-premier-league-goal-768x432.png 768w, https://theanalyst.com/wp-content/uploads/2023/05/billing-quickest-premier-league-goal-1536x864.png 1536w, https://theanalyst.com/wp-content/uploads/2023/05/billing-quickest-premier-league-goal.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></div>
+
+
+<h2 class="has-text-align-center wp-block-heading"><strong>April</strong></h2>
+
+
+
+<ul>
+<li>Man City&#8217;s 4-1 win against Liverpool was their 100th Premier League home win under Pep Guardiola, in their 128th such match at the Etihad Stadium. It&#8217;s the fastest a manager has reached 100 home wins in the competition, beating Arsène Wenger&#8217;s previous record of 139 games.</li>
+</ul>
+
+
+
+<ul>
+<li>In Roy Hodgson&#8217;s first game back as Crystal Palace boss (a 2-1 win versus Leicester), the Eagles mustered 31 shots, their joint-most on record in the Premier League (since 2003-04, level with 31 against Cardiff in December 2018).</li>
+</ul>
+
+
+
+<ul>
+<li>Chelsea versus Liverpool became only the third ever fixture between two English top-flight sides to finish 0-0 four times consecutively, after Everton against Liverpool (1974-1975) and Arsenal against QPR (1992-1994).</li>
+</ul>
+
+
+
+<ul>
+<li>James Milner made his 610th appearance in the Premier League (against Chelsea), moving above Frank Lampard (609) into third all-time in the competition, behind only Gareth Barry (653) and Ryan Giggs (632).</li>
+</ul>
+
+
+
+<ul>
+<li>Against Newcastle, Brentford striker Ivan Toney failed to convert a penalty attempt for the first time since October 2018 for Peterborough vs Barnsley, having scored 24 successive penalties before that miss (excluding shootouts).</li>
+</ul>
+
+
+
+<ul>
+<li>With his strike against Brighton, Tottenham’s Son Heung-min became the first Asian player to score 100 Premier League goals.</li>
+</ul>
+
+
+
+<ul>
+<li>At Southampton, Kevin De Bruyne registered his <a href="https://theanalyst.com/eu/2023/04/most-premier-league-assists/"><strong>100th Premier League assist</strong></a> (99 for Man City, one for Chelsea). He&#8217;s the fifth player to reach the milestone, doing so in fewer appearances (237) than any of the previous four.</li>
+</ul>
+
+
+
+<ul>
+<li>With 2-2 draws against Liverpool and West Ham, Arsenal failed to win back-to-back Premier League games despite having a two-goal lead in each for a very first time.</li>
+</ul>
+
+
+
+<ul>
+<li>Losing 5-1 against Crystal Palace and 6-1 against Liverpool, Leeds conceded five or more goals in back-to-back league games for the first time in the club&#8217;s history.</li>
+</ul>
+
+
+
+<ul>
+<li>Newcastle took a 5-0 lead against Spurs within 21 minutes, the second-earliest a side has done so in Premier League history, after Man City vs Watford in September 2019 (18th minute). The Magpies scored five goals in the first half of a Premier League match for the first time.</li>
+</ul>
+
+
+
+<ul>
+<li>Aston Villa scored in each of their first 20 Premier League games under Unai Emery, the longest consecutive scoring streak from the start of a manager&#8217;s tenure in the competition&#8217;s history.</li>
+</ul>
+
+
+
+<ul>
+<li>Thanks to their 4-1 defeat at Manchester City, Arsenal became the first side to go four consecutive Premier League games winless (D3 L1) while starting the day top for each match since Arsenal themselves in March 2008.</li>
+</ul>
+
+
+
+<ul>
+<li>Brighton&#8217;s 6-0 win over Wolves was the first time they&#8217;ve scored six goals in a game as a top-flight club. It was their biggest league win overall since February 2000 (7-1 vs. Chester) and Wolves&#8217; biggest league defeat since March 2007 (6-0 versus Southampton).</li>
+</ul>
+
+
+
+<ul>
+<li>Leeds United conceded 23 Premier League goals in April, the most goals conceded by a team in a month in Premier League history, breaking their own record of 20 in February 2022. It was the most by a team in a month in the top-flight since Birmingham conceded 23 goals in April 1965.</li>
+</ul>
+
+
+<div class="wp-block-image">
+<figure id="figure-75311"class="aligncenter size-large"><img loading="lazy" decoding="async" width="1024" height="576" src="https://theanalyst.com/wp-content/uploads/2023/05/ivan-toney-penalty-miss-1024x576.png" alt="Ivan Toney Penalty Miss" class="wp-image-75311" srcset="https://theanalyst.com/wp-content/uploads/2023/05/ivan-toney-penalty-miss-1024x576.png 1024w, https://theanalyst.com/wp-content/uploads/2023/05/ivan-toney-penalty-miss-300x169.png 300w, https://theanalyst.com/wp-content/uploads/2023/05/ivan-toney-penalty-miss-768x432.png 768w, https://theanalyst.com/wp-content/uploads/2023/05/ivan-toney-penalty-miss-1536x864.png 1536w, https://theanalyst.com/wp-content/uploads/2023/05/ivan-toney-penalty-miss.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></div>
+
+
+<h2 class="has-text-align-center wp-block-heading"><strong>May</strong></h2>
+
+
+
+<ul>
+<li>Erling Haaland’s 35th goal of the Premier League season on 3 May 2023 set a new record for the most goals scored by a player in a single Premier League campaign. He’d eventually end the season on 36 – the most by a top-flight player in England since Ron Davies in 1966-67 (37).</li>
+</ul>
+
+
+
+<ul>
+<li>In winning the Premier League title with Man City, Pep Guardiola picked up his 11th league title in 14 seasons as a top flight manager across spells in charge of Barcelona, Bayern Munich and Manchester City. He has won three consecutive league titles with each of those clubs.</li>
+</ul>
+
+
+
+<ul>
+<li>Arsenal ended the 2022-23 Premier League season in second place despite ending 248 days atop the league. This was the most days that a team have led in an English top-flight season without winning the title.</li>
+</ul>
+
+
+
+<ul>
+<li>By scoring in Arsenal&#8217;s 3-1 win over Chelsea, Gabriel Jesus set a new Premier League record for most games scored in without ever ending on the losing side (55).</li>
+</ul>
+
+
+
+<ul>
+<li>Against West Ham, Phil Foden scored Manchester City&#8217;s 1,000th goal in all competitions under Pep Guardiola, reaching that landmark in just 404 games.</li>
+</ul>
+
+
+
+<ul>
+<li>Harry Kane&#8217;s winner against Crystal Palace was his 100th home goal in the Premier League. It was also his 10th headed goal of 2022-23, the most by a player in a single campaign in Premier League history.</li>
+</ul>
+
+
+
+<ul>
+<li>There were 43 years and 308 days between Spurs&#8217; Ryan Mason and Crystal Palace boss Roy Hodgson&#8217;s ages, the biggest gap between two managers facing off in Premier League history.</li>
+</ul>
+
+
+
+<ul>
+<li>There were 21 goals scored in the three games played on 8 May 2023 (Fulham 5-3 Leicester, Brighton 1-5 Everton and Nottingham Forest 4-3 Southampton), the most on a single day with a maximum of three games in Premier League history.</li>
+</ul>
+
+
+
+<ul>
+<li>Tottenham in 2022-23 became just the second time in a 38-game Premier League season that a side has both scored and conceded 60+ goals, with the other occasion also being Spurs in 2007-08.</li>
+</ul>
+
+
+
+<ul>
+<li>Mohamed Salah&#8217;s assist for Roberto Firmino&#8217;s equaliser against Aston Villa was the 25th time the pair have combined for a Premier League goal (Salah 12 assists, Firmino 13), the most of any Liverpool duo in the competition.</li>
+</ul>
+
+
+
+<ul>
+<li>Aston Villa&#8217;s Emiliano Martínez picked up his seventh yellow card of the season against Liverpool, just one short of the record by a goalkeeper in a single Premier League campaign (Jens Lehmann’s eight in 2006-07).</li>
+</ul>
+
+
+
+<ul>
+<li>Aston Villa had four players booked for time-wasting against Liverpool (Martínez, Digne, Young, Konsa), the joint-most on record (since 2006-07) for a club in a single Premier League campaign (West Ham also four vs QPR in October 2012).</li>
+</ul>
+
+
+
+<ul>
+<li>Nottingham Forest&#8217;s victory over ensured that all three promoted teams avoided relegation in a Premier League season for the fourth time, after 2001-02, 2011-12 and 2017-18.</li>
+</ul>
+
+
+
+<ul>
+<li>Nottingham Forest had just 18% possession against Arsenal, the lowest tally on record (since 2003-04) for a winning team in a Premier League match.</li>
+</ul>
+
+
+
+<ul>
+<li>Manchester City scored 100 goals at the Etihad this season, equaling the record (set by themselves in 2018-19) for most home goals scored in all competitions in a single season by an English top-flight club.</li>
+</ul>
+
+
+
+<ul>
+<li>Chelsea&#8217;s starting XI against Man Utd on 24 May 2023 had an average age of 23 years and 238 days, their youngest ever in a Premier League match. Indeed, nine of their XI were under 24, with the Blues just the third team to start as many players of that age in a Premier League match after Middlesbrough (10 vs Fulham, May 2006) and Aston Villa (10 vs Swansea, January 2013).</li>
+</ul>
+
+
+
+<ul>
+<li>Erik ten Hag became just the fifth Man Utd manager to finish in the top four of the top-flight in his first league season in charge of the Red Devils, after John Bentley (1912-13), Matt Busby (1946-47), Ron Atkinson (1981-82) and Louis van Gaal (2014-15).</li>
+</ul>
+
+
+
+<ul>
+<li>Harry Kane&#8217;s brace against Leeds on the final day was the 26th different Premier League game he&#8217;d scored in this season, a joint record in the competition (level with Andrew Cole in 1993-94).</li>
+</ul>
+
+
+
+<ul>
+<li>Having also netted 30 goals in 2017-18, Harry Kane became the second player to score 30 goals in more than one Premier League season, after Alan Shearer (three in a row between 1993-94 and 1995-96). However, Kane has failed to win the Golden Boot in either of his 30-goal campaigns.</li>
+</ul>
+
+
+
+<ul>
+<li>Having been relegated with Norwich last season, and Leicester in 2022-23, Dean Smith became the first manager to suffer relegation in consecutive Premier League campaigns (in charge on the final day).</li>
+</ul>
+
+
+<div class="wp-block-image">
+<figure id="figure-75312"class="aligncenter size-large"><img loading="lazy" decoding="async" width="1024" height="576" src="https://theanalyst.com/wp-content/uploads/2023/05/manchester-city-premier-league-title-1024x576.png" alt="Manchester City Premier League title" class="wp-image-75312" srcset="https://theanalyst.com/wp-content/uploads/2023/05/manchester-city-premier-league-title-1024x576.png 1024w, https://theanalyst.com/wp-content/uploads/2023/05/manchester-city-premier-league-title-300x169.png 300w, https://theanalyst.com/wp-content/uploads/2023/05/manchester-city-premier-league-title-768x432.png 768w, https://theanalyst.com/wp-content/uploads/2023/05/manchester-city-premier-league-title-1536x864.png 1536w, https://theanalyst.com/wp-content/uploads/2023/05/manchester-city-premier-league-title.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></div>
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide"/>
+
+
+
+<p class="has-text-align-center"><strong><em>Enjoy this?&nbsp;<a href="https://theanalyst.com/sign-up/" target="_blank" rel="noreferrer noopener">Subscribe</a>&nbsp;to our mailing list to receive exclusive weekly content. And follow us on&nbsp;<a href="https://www.twitter.com/OptaAnalyst" target="_blank" rel="noreferrer noopener">Twitter</a>&nbsp;too.</em></strong></p>
+
+      </div>
+    </div>
+  </article>
+
+  
+
+
+
+
+
+    
+                            
+    
+
+    <aside class="related-posts" id="related-posts-75289" data-count="4">
+
+                    <div class="related-posts-title">
+                <h3>Related Articles</h3>
+            </div>
+        
+        <div class="related-posts-list related-posts-carousel" style="--post-count: 4">
+                                                
+  
+
+
+    
+
+
+    <article class="teaser--has-image teaser-type--post teaser-vertical" id="tease-113009">
+
+    <div class="thumbnail-wrapper">
+      <a class="thumbnail-link" href="/eu/2024/02/monster-jarrad-branthwaite-destined-for-top/">
+                  <img class="thumbnail" src="https://theanalyst.com/wp-content/uploads/2024/02/jarrad-branthwaite-opta-analyst-1024x715.jpg" alt="Why &#8216;Monster&#8217; Jarrad Branthwaite Is Destined for the Top"
+               srcset="https://theanalyst.com/wp-content/uploads/2024/02/jarrad-branthwaite-opta-analyst-1024x715.jpg" sizes="(max-width: 1024px) 100vw, 1024px"/>
+              </a>
+
+              <div class="pills">
+                          <a class="pill" href="/eu/sport/football/premier-league/" style="--start-color:#b225c3;--end-color:#e02b8f;">Premier League</a>
+                  </div>
+          </div>
+
+    <div class="teaser-content-wrapper">
+      <a class="teaser-content-link" href="/eu/2024/02/monster-jarrad-branthwaite-destined-for-top/">
+        <h4 class="teaser-title">Why &#8216;Monster&#8217; Jarrad Branthwaite Is Destined for the Top</h4>
+              </a>
+
+      <div class="teaser-byline">
+                  <time datetime="February 28, 2024">6 hours ago</time>
+                    <a class="author" href="/eu/author/oliver-hopkins/">Oliver Hopkins</a>      </div>
+    </div>
+
+  </article>
+                                    
+  
+
+
+    
+
+
+    <article class="teaser--has-image teaser-type--post teaser-vertical" id="tease-112995">
+
+    <div class="thumbnail-wrapper">
+      <a class="thumbnail-link" href="/eu/2024/02/leon-bailey-premier-league-most-in-form-attacker/">
+                  <img class="thumbnail" src="https://theanalyst.com/wp-content/uploads/2024/02/leon-bailey-fulfilling-his-potential-at-aston-villa-1024x715.jpg" alt="A Year on From Villa Park Tears, Leon Bailey is the Premier League’s Most In-Form Attacker"
+               srcset="https://theanalyst.com/wp-content/uploads/2024/02/leon-bailey-fulfilling-his-potential-at-aston-villa-1024x715.jpg" sizes="(max-width: 1024px) 100vw, 1024px"/>
+              </a>
+
+              <div class="pills">
+                          <a class="pill" href="/eu/sport/football/premier-league/" style="--start-color:#b225c3;--end-color:#e02b8f;">Premier League</a>
+                  </div>
+          </div>
+
+    <div class="teaser-content-wrapper">
+      <a class="teaser-content-link" href="/eu/2024/02/leon-bailey-premier-league-most-in-form-attacker/">
+        <h4 class="teaser-title">A Year on From Villa Park Tears, Leon Bailey is the Premier League’s Most In-Form Attacker</h4>
+              </a>
+
+      <div class="teaser-byline">
+                  <time datetime="February 28, 2024">6 hours ago</time>
+                    <a class="author" href="/eu/author/ryan-benson/">Ryan Benson</a>      </div>
+    </div>
+
+  </article>
+                                    
+  
+
+
+    
+
+
+    <article class="teaser--has-image teaser-type--post teaser-vertical" id="tease-36440">
+
+    <div class="thumbnail-wrapper">
+      <a class="thumbnail-link" href="/eu/2024/02/who-has-scored-the-most-premier-league-hat-tricks/">
+                  <img class="thumbnail" src="https://theanalyst.com/wp-content/uploads/2022/06/pl-hat-tricks-header-1024x715.jpg" alt="Who Has Scored the Most Premier League Hat-Tricks?"
+               srcset="https://theanalyst.com/wp-content/uploads/2022/06/pl-hat-tricks-header-1024x715.jpg" sizes="(max-width: 1024px) 100vw, 1024px"/>
+              </a>
+
+              <div class="pills">
+                          <a class="pill" href="/eu/sport/football/premier-league/" style="--start-color:#b225c3;--end-color:#e02b8f;">Premier League</a>
+                  </div>
+          </div>
+
+    <div class="teaser-content-wrapper">
+      <a class="teaser-content-link" href="/eu/2024/02/who-has-scored-the-most-premier-league-hat-tricks/">
+        <h4 class="teaser-title">Who Has Scored the Most Premier League Hat-Tricks?</h4>
+              </a>
+
+      <div class="teaser-byline">
+                  <time datetime="February 28, 2024">14 hours ago</time>
+                    <a class="author" href="/eu/author/opta-analyst/">Opta Analyst</a>      </div>
+    </div>
+
+  </article>
+                                    
+  
+
+
+    
+
+
+    <article class="teaser--has-image teaser-type--post teaser-vertical" id="tease-112830">
+
+    <div class="thumbnail-wrapper">
+      <a class="thumbnail-link" href="/eu/2024/02/antony-from-marquee-signing-to-fourth-choice/">
+                  <img class="thumbnail" src="https://theanalyst.com/wp-content/uploads/2024/02/antony-falls-down-the-man-utd-pecking-order-1024x715.jpg" alt="Antony Was an £85M Marquee Signing, Now He’s Man Utd’s Fourth-Choice Right-Winger"
+               srcset="https://theanalyst.com/wp-content/uploads/2024/02/antony-falls-down-the-man-utd-pecking-order-1024x715.jpg" sizes="(max-width: 1024px) 100vw, 1024px"/>
+              </a>
+
+              <div class="pills">
+                          <a class="pill" href="/eu/sport/football/premier-league/" style="--start-color:#b225c3;--end-color:#e02b8f;">Premier League</a>
+                  </div>
+          </div>
+
+    <div class="teaser-content-wrapper">
+      <a class="teaser-content-link" href="/eu/2024/02/antony-from-marquee-signing-to-fourth-choice/">
+        <h4 class="teaser-title">Antony Was an £85M Marquee Signing, Now He’s Man Utd’s Fourth-Choice Right-Winger</h4>
+              </a>
+
+      <div class="teaser-byline">
+                  <time datetime="February 28, 2024">15 hours ago</time>
+                    <a class="author" href="/eu/author/ryan-benson/">Ryan Benson</a>      </div>
+    </div>
+
+  </article>
+                                    </div>
+
+    </aside>
+
+    
+
+
+  <footer>
+    <section class="footer">
+  <div class="footer__top">
+
+    <section class="footer__top--subscribe-form">
+        <div class="subscribe-form-footer">
+  <form class="subscribe-form">
+    <div class="subscribe-form-heading">
+      <h3 class="subscribe-form-title">Subscribe</h3>
+      <p class="subscribe-form-description">Sign up and be the first to receive exclusive stats, news, and updates
+        from Opta Analyst.</p>
+    </div>
+
+
+    <div class="subscribe-form-row subscribe-form-row--flex">
+      <label class="subscribe-form-email" aria-label="email">
+        <input name="email" type="email" value="" placeholder="Email Address" aria-required="true"/>
+      </label>
+
+      <div class="subscribe-form-submit">
+        <input type="submit" class="form_button button" value="Sign Up" disabled="disabled">
+      </div>
+    </div>
+
+    <div class="subscribe-form-row">
+      <label class="subscribe-form-name">
+        <input autocomplete="off" type="text" name="name" placeholder="Name" value="">
+      </label>
+
+      <label class="subscribe-form-phone">
+        <input autocomplete="off" type="text" name="phone" value="">
+      </label>
+
+      <label class="subscribe-form-consent">
+        <input class="field-choice-input" name="consent" type="checkbox"/>
+
+        <small>I agree to receive emails from Opta Analyst.<br>See our
+          <a href="https://www.statsperform.com/privacy-policy/" target="_blank">Privacy Policy</a>
+          for more details.</small>
+      </label>
+    </div>
+
+  </form>
+</div>    </section>
+
+    <nav class="footer__top--sports-links">
+          <div>
+    <a class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-54 menu-item-has-children"href="/eu/sport/football/">Football</a>
+            <div class="sub-nav">
+              <div>
+    <a class="menu-item menu-item-type-custom menu-item-object-custom menu-item-85097"href="/eu/2022/08/2022-23-football-stats/">Opta Stat Hubs</a>
+      </div>
+  <div>
+    <a class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-59"href="/eu/sport/football/premier-league/">Premier League</a>
+      </div>
+  <div>
+    <a class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-56"href="/eu/sport/football/champions-league/">Champions League</a>
+      </div>
+  <div>
+    <a class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-57"href="/eu/sport/football/la-liga/">La Liga</a>
+      </div>
+  <div>
+    <a class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-55"href="/eu/sport/football/bundesliga/">Bundesliga</a>
+      </div>
+  <div>
+    <a class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-60"href="/eu/sport/football/serie-a/">Serie A</a>
+      </div>
+  <div>
+    <a class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-58"href="/eu/sport/football/ligue-1/">Ligue 1</a>
+      </div>
+  <div>
+    <a class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16224"href="/eu/sport/football/wsl/">WSL</a>
+      </div>
+  <div>
+    <a class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-105250"href="/eu/sport/afcon-2023/">AFCON 2023</a>
+      </div>
+  <div>
+    <a class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-105251"href="/eu/sport/asian-cup-2023/">Asian Cup 2023</a>
+      </div>
+        </div>
+      </div>
+  <div>
+    <a class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-61 menu-item-has-children"href="/eu/sport/american-football/">American Football</a>
+            <div class="sub-nav">
+              <div>
+    <a class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-65"href="/eu/sport/american-football/nfl/">NFL</a>
+      </div>
+  <div>
+    <a class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-62"href="/eu/sport/american-football/fantasy/">Fantasy</a>
+      </div>
+  <div>
+    <a class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-63"href="/eu/sport/american-football/fbs/">FBS</a>
+      </div>
+  <div>
+    <a class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-64"href="/eu/sport/american-football/fcs/">FCS</a>
+      </div>
+        </div>
+      </div>
+  <div>
+    <a class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-66 menu-item-has-children"href="/eu/sport/basketball/">Basketball</a>
+            <div class="sub-nav">
+              <div>
+    <a class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-67"href="/eu/sport/basketball/nba/">NBA</a>
+      </div>
+  <div>
+    <a class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68"href="/eu/sport/basketball/ncaa/">NCAA</a>
+      </div>
+        </div>
+      </div>
+  <div>
+    <a class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-69 menu-item-has-children"href="/eu/sport/tennis/">Tennis</a>
+            <div class="sub-nav">
+              <div>
+    <a class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-70"href="/eu/sport/tennis/wta/">WTA</a>
+      </div>
+  <div>
+    <a class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-71"href="/eu/sport/tennis/atp/">ATP</a>
+      </div>
+        </div>
+      </div>
+  <div>
+    <a class="menu-item menu-item-type-custom menu-item-object-custom menu-item-72 menu-item-has-children">Other</a>
+            <div class="sub-nav">
+              <div>
+    <a class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-75"href="/eu/sport/rugby/">Rugby</a>
+      </div>
+  <div>
+    <a class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2086"href="/eu/sport/baseball/mlb/">Baseball</a>
+      </div>
+  <div>
+    <a class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-74"href="/eu/sport/golf/">Golf</a>
+      </div>
+  <div>
+    <a class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-76"href="/eu/sport/cricket/">Cricket</a>
+      </div>
+  <div>
+    <a class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1988"href="/eu/sport/metric-explainers/">Metric Explainers</a>
+      </div>
+  <div>
+    <a class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8904"href="/eu/sport/articulos-en-espanol/">Artículos en Español</a>
+      </div>
+        </div>
+      </div>
+  <div>
+    <a class="menu-item menu-item-type-custom menu-item-object-custom menu-item-77 menu-item-has-children">Media</a>
+            <div class="sub-nav">
+              <div>
+    <a class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-79"href="/eu/media/podcast/">Podcast</a>
+      </div>
+  <div>
+    <a class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85096"href="/eu/sign-up/">Opta Analyst Newsletter</a>
+      </div>
+        </div>
+      </div>
+  <div>
+    <a class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99525 menu-item-has-children"href="/eu/opta-games/">Free Games</a>
+            <div class="sub-nav">
+              <div>
+    <a class="menu-item menu-item-type-custom menu-item-object-custom menu-item-99526"href="https://optamax.theanalyst.com/preview?utm_medium=navigation&utm_source=theanalyst&utm_campaign=landing-page-preview">Opta Max</a>
+      </div>
+  <div>
+    <a class="menu-item menu-item-type-custom menu-item-object-custom menu-item-99527"href="https://optafive.theanalyst.com/epl?utm_medium=navigation&utm_source=theanalyst&utm_campaign=optagames">Opta Five</a>
+      </div>
+  <div>
+    <a class="menu-item menu-item-type-custom menu-item-object-custom menu-item-99528"href="https://optamax.theanalyst.com/preview?utm_medium=navigation&utm_source=theanalyst&utm_campaign=landing-page-preview">Opta Player Ratings</a>
+      </div>
+        </div>
+      </div>
+  <div>
+    <a class="menu-item menu-item-type-custom menu-item-object-custom menu-item-96 menu-item-has-children">Company</a>
+            <div class="sub-nav">
+              <div>
+    <a class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101"href="/eu/about-us/">About Us</a>
+      </div>
+  <div>
+    <a class="menu-item menu-item-type-post_type menu-item-object-page menu-item-100"href="/eu/advertising/">Advertising</a>
+      </div>
+  <div>
+    <a class="menu-item menu-item-type-post_type menu-item-object-page menu-item-98"href="/eu/contact-us/">Contact Us</a>
+      </div>
+  <div>
+    <a class="menu-item menu-item-type-post_type menu-item-object-page menu-item-97"href="/eu/press/">Press</a>
+      </div>
+  <div>
+    <a class="menu-item menu-item-type-custom menu-item-object-custom menu-item-102"href="https://statsperform.com/"                target="_blank">Stats Perform</a>
+      </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <nav class="footer__bottom">
+      <div class="footer__bottom--social-links">
+            <div>
+    <a class="menu-item menu-item-type-custom menu-item-object-custom menu-item-208"href="https://twitter.com/OptaAnalyst"                target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+      </div>
+  <div>
+    <a class="menu-item menu-item-type-custom menu-item-object-custom menu-item-209"href="https://www.instagram.com/optaanalyst/"                target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+      </div>
+  <div>
+    <a class="menu-item menu-item-type-custom menu-item-object-custom menu-item-211"href="https://www.youtube.com/channel/UC-H-Ct5v4vVOPXOUa2ljIcQ"                target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+      </div>
+      </div>
+      <div class="footer__bottom--utility-nav">
+          <div class="menu-item menu-item-innactive">&copy;&nbsp;2024 The Analyst. All Rights Reserved.</div>
+            <div>
+    <a class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2135"href="https://www.statsperform.com/privacy-policy/"                target="_blank">Privacy Policy</a>
+      </div>
+  <div>
+    <a class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2136"href="https://www.statsperform.com/terms-of-use/"                target="_blank">Terms of Use</a>
+      </div>
+  <div>
+    <a class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2137"href="https://www.statsperform.com/ccpa-request-form/"                target="_blank">Do Not Sell My Information</a>
+      </div>
+  <div>
+    <a class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2138"href="/eu/advertising/">Advertising</a>
+      </div>
+  <div>
+    <a class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1973"href="/eu/cookie-policy/">Cookie Policy</a>
+      </div>
+  <div>
+    <a class="one-trust-preferences menu-item menu-item-type-custom menu-item-object-custom menu-item-1974"href="/eu#cookie-preferences">Cookie Preferences</a>
+      </div>
+      </div>
+      <div class="footer__bottom--logo">
+          <a href="https://www.statsperform.com" class="stats-perform--link" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 630 166"><path d="M614.3 89.5l-21.2 38.8-21-38.8h-15.5v74.9h16v-42.2l14.9 26.4h11.1l14.9-26.8v42.6H630V89.5zm-79.8 47c-.2-.4-.5-.8-.7-1.1 4.1-1.7 7.5-4.8 9.5-8.8 1-1.9 1.7-4 2.1-6.1.4-2.2.6-4.5.6-6.7.1-3.5-.5-6.9-1.7-10.2-1.1-2.9-2.8-5.5-5-7.7s-4.9-3.8-7.9-4.8c-3.3-1.1-6.8-1.7-10.3-1.6h-33.5v74.9h17.2v-26.6h4.3c1.3 0 2.5.1 3.8.3 1 .1 1.9.5 2.7 1 .8.5 1.5 1.2 2.1 1.9.7 1 1.3 2 1.8 3.1l9.8 20.4h19.9L536 139.1c-.7-1.1-1.2-2-1.5-2.6zm-8.6-16.3c-1.5 1.5-3.7 2.2-6.5 2.2h-14.7v-17.3h14.7c2.8 0 5 .8 6.5 2.3 1.5 1.5 2.3 3.7 2.3 6.4 0 2.8-.8 4.9-2.3 6.4zM470 95.4c-5.4-5-13.1-7.5-23.1-7.5-9.9 0-17.6 2.5-23 7.5-5.4 5-8.1 12-8.1 20.9v21.3c0 8.9 2.7 15.9 8.1 20.9s13.1 7.5 23 7.5c10 0 17.7-2.5 23.1-7.5 5.4-5 8.1-12 8.1-20.9v-21.3c0-8.9-2.7-15.9-8.1-20.9zm-9.1 42.5c0 8.2-4.7 12.3-14 12.3-4.5 0-8-1-10.3-3.1s-3.6-5.2-3.6-9.2V116c0-4.1 1.2-7.2 3.6-9.2 2.4-2.1 5.8-3.1 10.4-3.1 9.3 0 14 4.1 14 12.3l-.1 21.9zm-102.7 26.5h17.2v-28.6h23.4l5.2-15.6h-28.6v-15.1h33.9V89.5h-51.1zm-20.6-25.3c-.6-1.1-1.1-2-1.5-2.6-.2-.4-.5-.8-.7-1.1 2.1-.9 4-2.1 5.7-3.7 1.5-1.5 2.8-3.2 3.8-5.1 1-1.9 1.7-4 2.1-6.1.4-2.2.6-4.5.6-6.7.1-3.5-.5-6.9-1.7-10.2-1.1-2.9-2.8-5.5-5-7.7s-4.9-3.8-7.9-4.8c-3.3-1.1-6.8-1.7-10.3-1.6h-33.6v74.9h17.2v-26.6h4.3c1.3 0 2.5.1 3.8.3 1 .1 1.9.5 2.7 1 .8.5 1.5 1.2 2.1 1.9.7 1 1.3 2 1.8 3.1l9.8 20.4h19.9l-13.1-25.4zm-10.1-18.9c-1.5 1.5-3.7 2.2-6.5 2.2h-14.7v-17.3H321c2.8 0 5 .8 6.5 2.3 1.5 1.5 2.3 3.7 2.3 6.4 0 2.8-.8 4.9-2.3 6.4zM246 134.3h23.2l5.2-15.6H246v-13.6h33.9V89.5h-51.1v74.9h52.1v-15.7H246zm-32.1-38c-2.3-2.2-5.1-3.9-8.1-5-3.5-1.2-7.1-1.8-10.8-1.7h-32.6v74.9h17.2v-59.3h13.6c3.2 0 5.6.9 7.3 2.6 1.7 1.7 2.5 4.1 2.5 7.1s-.8 5.4-2.5 7-4.1 2.5-7.3 2.5h-4.1l-5.2 15.7H195c3.7.1 7.3-.5 10.8-1.7 3-1.1 5.8-2.7 8.1-5 2.3-2.2 4-4.9 5.1-7.9 2.4-6.9 2.4-14.3 0-21.2-1.1-3.1-2.9-5.8-5.1-8zm259.7-19.9c3.6-1 6.9-2.6 9.9-4.9 2.6-2 4.8-4.7 6.2-7.7 1.5-3.1 2.2-6.5 2.2-10 0-4.4-.7-8-2.2-10.8-1.4-2.7-3.5-5-6-6.7-2.7-1.8-5.6-3-8.7-3.8-3.4-.9-6.9-1.5-10.3-1.9-1.3-.1-2.4-.3-3.4-.4s-2-.3-2.8-.4c-.8-.1-1.6-.3-2.4-.5-.7-.2-1.5-.5-2.4-.7-3.2-1.1-4.9-3-4.9-5.7 0-2.5 1-4.4 2.9-5.5 1.9-1.2 5.1-1.7 9.5-1.7 6 0 10.1 2.3 12.4 7l1.4 2.7 15.8-6.9-1.4-3c-2.5-5.3-5.9-9.2-10.4-11.7-4.4-2.5-10.4-3.8-17.9-3.8-4.3-.1-8.6.5-12.8 1.7-3.4 1-6.6 2.6-9.5 4.9-2.5 2-4.5 4.5-5.8 7.4-1.4 3-2 6.3-2 9.6.3 4.7 1.2 8.5 2.9 11.3 1.5 2.7 3.7 5 6.3 6.6 2.8 1.7 5.9 2.8 9.1 3.4 3.4.7 7.1 1.2 11 1.7 4.7.5 8.2 1.3 10.6 2.4 2.4 1.1 3.6 2.8 3.7 5.2 0 5.6-4.7 8.3-14 8.3-6.8 0-11.4-2.4-13.6-7.3-.1-.3-.2-.5-.3-.8-.2-.4-.4-.8-.6-1.3-.3-.6-.6-1.2-.8-1.8L429.4 57l1.5 4c4.2 11.4 14.1 17.1 29.6 17.1 4.4 0 8.8-.5 13.1-1.7zM422.9 1.6h-62.4l4.9 15.6h21.7v59.3h17.1V17.2h18.7zM319.2 76.5l2.2-6.7 2.4-7.1 4.6-13.9 2.2-6.7 4.1-12.1 2.3-6.9 8.4 25.7h-11.5l-4.6 13.9h20.6l4.6 13.8h18.8l-28-74.9h-16l-28.2 74.9zM314 1.6h-64.5v15.6h20.8v59.3h17.1V17.2h21.5zM212.8 78.1c4.4.1 8.8-.5 13.1-1.7 3.6-1 6.9-2.6 9.9-4.9 2.6-2 4.8-4.7 6.2-7.7 1.5-3.1 2.2-6.5 2.2-10 0-4.4-.7-8-2.2-10.8-1.4-2.7-3.5-5-6-6.7-2.7-1.8-5.6-3-8.8-3.8-3.4-.9-6.9-1.5-10.3-1.9-1.3-.1-2.4-.3-3.4-.4-1-.1-2-.3-2.8-.4-.8-.1-1.6-.3-2.4-.5-.7-.2-1.5-.5-2.4-.7-3.2-1.1-4.9-3-4.9-5.7 0-2.5 1-4.4 2.9-5.5s5.1-1.7 9.5-1.7c6 0 10.1 2.3 12.4 7l1.4 2.7 15.8-6.9-1.4-3c-2.4-5.3-5.9-9.2-10.3-11.7S220.9 0 213.4 0c-4.3-.1-8.6.5-12.8 1.7-3.4 1-6.6 2.6-9.4 4.9-2.5 2-4.5 4.5-5.9 7.4-1.4 3-2 6.3-2 9.6.3 4.7 1.2 8.5 2.9 11.3 1.5 2.7 3.7 5 6.3 6.6 2.8 1.7 5.9 2.8 9.1 3.4 3.4.7 7.1 1.2 11 1.7 4.6.5 8.2 1.3 10.6 2.4 2.4 1.1 3.6 2.8 3.6 5.2 0 5.6-4.7 8.3-14 8.3-6.8 0-11.4-2.4-13.6-7.3-.1-.3-.2-.5-.3-.8-.2-.4-.4-.8-.6-1.3-.3-.6-.6-1.2-.8-1.8L181.7 57l1.5 4c4.2 11.4 14 17.1 29.6 17.1zM105.8 0L50.7 166H21.9L77 0h28.8zm1.6 39.3l-30.7 92.5h28.9l30.7-92.5h-28.9zM57.1 16H28.2L0 101h28.9l28.2-85z" fill="#fff"/></svg>
+          </a>
+      </div>
+      <div class="menu-item menu-item-innactive menu-item-mobile">&copy;&nbsp;2024 The Analyst. All Rights Reserved.</div>
+  </nav>
+</section>
+  </footer>
+
+<script type="text/javascript" src="https://theanalyst.com/wp-content/themes/the-analyst-theme/dist/js/bundle.js?ver=d80efa05619288308270fd2a312b596b" id="the-analyst-theme-scripts-js"></script>
+<script type="text/javascript" src="https://theanalyst.com/wp-content/themes/the-analyst-theme/dist/js/bundle-single.js?ver=1fc9df6e4cf7918bc111652295e8c8c6" id="the-analyst-theme-post-scripts-js"></script>
+<script type="text/javascript" async src="https://platform.twitter.com/widgets.js?ver=5.0.0" id="twitter-widgets-js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.1/iframeResizer.min.js?ver=4.3.1" id="iframe-resizer-js"></script>
+<script type="text/javascript" src="https://theanalyst.com/wp-content/plugins/opta-games-leaderboards/build/index.js" id="opta-games-leaderboard-scripts-js"></script>
+<script type="text/javascript" src="https://theanalyst.com/wp-content/plugins/opta-games-widgets/build/player-sorting-ad/index.js" id="opta-games-widgets-psa-scripts-js"></script>
+        <script type="text/javascript">
+            /* <![CDATA[ */
+           document.querySelectorAll("ul.nav-menu").forEach(
+               ulist => { 
+                    if (ulist.querySelectorAll("li").length == 0) {
+                        ulist.style.display = "none";
+
+                                            } 
+                }
+           );
+            /* ]]> */
+        </script>
+        
+
+  <!-- Fathom Analytics -->
+  <script src="https://bloc-party-lovely.theanalyst.com/script.js" data-site="DGFKDFQV" defer></script>
+  <!-- End Fathom Analytics embed -->
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"NRJS-034728da04015584270","applicationID":"1522649431","transactionName":"ZV1UNURRDxEHAkNRX1wXdwJCWQ4MSRJeVldeXQ==","queueTime":0,"applicationTime":30479,"atts":"SRpXQwxLHB8=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
+
+<!-- plugin=object-cache-pro client=phpredis metric#hits=10611 metric#misses=141 metric#hit-ratio=98.7 metric#bytes=3987577 metric#prefetches=890 metric#store-reads=138 metric#store-writes=76 metric#store-hits=919 metric#store-misses=133 metric#sql-queries=29 metric#ms-total=30475.48 metric#ms-cache=113.51 metric#ms-cache-avg=0.5329 metric#ms-cache-ratio=0.4 -->
