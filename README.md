@@ -77,8 +77,6 @@ This step uses [Anaconda](https://www.anaconda.com/) as the environment manager,
 OPENAI_API_KEY = 'YOUR API KEY'
 ```
 
-After you run, the notebook will open a Gradio application where you can perform segmentations using SAM. It is deeply recommended to use GPU to execute the code.
-
 ## References
 
 [Generative AI NanoDegree](https://www.udacity.com/enrollment/nd608/1.0.14)
