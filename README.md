@@ -1,6 +1,6 @@
 # GAIND-Custom-Chatbot
 
-O objetivo principal deste projeto é construir um chatbot customizado capaz de responder perguntas utilizando uma base de dados customizada. Ou seja, um conjunto de dados que não foi utilizada durante o treinamento do modelo.
+The main objective of this project is to build a customized chatbot capable of answering questions using a customized database. That is, a data set that was not used during model training.
 
 <div align="center">
   <img src="./figures/custom_chatbot.jpg" alt="Category">
